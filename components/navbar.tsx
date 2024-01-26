@@ -20,6 +20,7 @@ export const Navbar = () => {
       </a>
       <div className="hidden md:flex gap-12 text-[20px] text-white font-khand justify-between items-center ">
         
+        <Link href="/">Home</Link>
         <Link href="/about">About Us</Link>
         <Link href="/portfolio">Programs</Link>
         <Link href="/services">Event Calender</Link>
@@ -42,6 +43,7 @@ export const Navbar = () => {
         <div className=" font-Poppins md:hidden fixed top-0 left-0 w-[85vw] h-[100%]  backdrop-blur-[0.8rem] flex flex-col gap-10 py-10 items-end pr-12  bg-gradient-to-l from-[#DA6039] to-[#FFA63E] text-white z-[50] font-semibold text-[24px] ">
           <HiX className=" text-2xl cursor-pointer " onClick={toggleMenu} />
           
+          <Link href="/" onClick={toggleMenu}>Home</Link>
           <Link href="/about" onClick={toggleMenu}>About Us</Link>
           <Link href="/portfolio" onClick={toggleMenu}>Programs</Link>
           <Link href="/services" onClick={toggleMenu}>Event Calender</Link>
