@@ -54,16 +54,16 @@ const page = () => {
                         <span className="text-[30px] font-[500]">FOLLOW OUR SOCIALS</span>
                         <div className="flex gap-8 mt-4 md:mt-0">
                             <Link href="">
-                                <Image src={insta} alt="Instagram"></Image>
+                                <Image src={insta} alt="Instagram" className="h-8 w-8 object-contain"></Image>
                             </Link>
                             <Link href="">
-                                <Image src={fb} alt="Facebook"></Image>
+                                <Image src={fb} alt="Facebook" className="h-8 w-8 object-contain"></Image>
                             </Link>
                             <Link href="">
-                                <Image src={quora} alt="Quora"></Image>
+                                <Image src={quora} alt="Quora" className="h-8 w-8 object-contain"></Image>
                             </Link>
                             <Link href="">
-                                <Image src={youtube} alt="Youtube"></Image>
+                                <Image src={youtube} alt="Youtube" className="h-8 w-8 object-contain"></Image>
                             </Link>
                         </div>
                     </div>

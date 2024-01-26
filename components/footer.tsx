@@ -52,16 +52,16 @@ const Footer = () => {
             <div className="block md:flex items-center justify-between mt-12 lg:mt-6">
                 <div className="flex items-center gap-10">
                     <Link href="">
-                        <Image src={linkedin} alt="Linkedin"></Image>
+                        <Image src={linkedin} alt="Linkedin" className="h-6 w-6 object-contain"></Image>
                     </Link>
                     <Link href="">
-                        <Image src={insta} alt="Instagram"></Image>
+                        <Image src={insta} alt="Instagram" className="h-6 w-6 object-contain"></Image>
                     </Link>
                     <Link href="">
-                        <Image src={fb} alt="Facebook"></Image>
+                        <Image src={fb} alt="Facebook" className="h-6 w-6 object-contain"></Image>
                     </Link>
                     <Link href="">
-                        <Image src={youtube} alt="Youtube"></Image>
+                        <Image src={youtube} alt="Youtube" className="h-6 w-6 object-contain"></Image>
                     </Link>
                 </div>
                 <div className="mt-12 md:mt-0 text-center md:text-justify text-[#646464] text-[13px] font-[400]">
