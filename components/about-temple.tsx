@@ -45,8 +45,8 @@ const TempleComponent = ({img,content,title1,title2}:TempleComponentProps)=>{
                 </div>
 
                 <div className="mt-4">
-                    {content.map((para)=>(
-                        <p className="text-[20px] leading-[32px] mt-4">
+                    {content.map((para,index)=>(
+                        <p key={index} className="text-[20px] leading-[32px] mt-4">
                             {para}
                         </p>
                     ))}
