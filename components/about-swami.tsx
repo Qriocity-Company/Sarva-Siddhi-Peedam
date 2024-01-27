@@ -34,8 +34,8 @@ const AboutSwami = () => {
 
           <div className="w-[90%]">
             <div className="md:w-[60%] z-20 relative">
-              {swamiInfo.map((para)=>(
-                <p className="text-[16px] leading-[22px] md:text-[20px] md:leading-[35.8px] mt-6">{para.content}</p>
+              {swamiInfo.map((para,index)=>(
+                <p key={index} className="text-[16px] leading-[22px] md:text-[20px] md:leading-[35.8px] mt-6">{para.content}</p>
               ))}
             </div>
           </div>

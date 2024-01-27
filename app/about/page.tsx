@@ -63,8 +63,8 @@ const page = () => {
                 </div>
 
                 <div className="mt-10">
-                    {aboutContent.meditationPractice.map((para)=>(
-                        <p className="text-[20px] leading-[26.6px] mb-6">
+                    {aboutContent.meditationPractice.map((para,index)=>(
+                        <p key={index} className="text-[20px] leading-[26.6px] mb-6">
                             {para.content}
                         </p>
                     ))}
@@ -83,8 +83,8 @@ const page = () => {
                 </div>
 
                 <div className="mt-8">
-                    {aboutContent.trustInformation.map((para)=>(
-                        <p className="text-[20px] leading-[26.6px] mb-5">
+                    {aboutContent.trustInformation.map((para,index)=>(
+                        <p key={index} className="text-[20px] leading-[26.6px] mb-5">
                             {para.content}
                         </p>
                     ))}

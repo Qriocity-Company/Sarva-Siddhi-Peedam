@@ -61,8 +61,8 @@ const AboutTemple = () => {
     <div className="w-full flex flex-col items-center font-khand">
         <h1 className="my-10 md:my-20 text-center leading-[72px] text-[60px] md:text-[68px] font-bold ">Our <span className="text-[#FFA63E]">Temple </span></h1>
 
-        {temples.map((temple)=>{
-            return <TempleComponent title1={temple.title1} title2={temple.title2} content={temple.content} img={temple.img}/>
+        {temples.map((temple,index)=>{
+            return <TempleComponent title1={temple.title1} title2={temple.title2} content={temple.content} img={temple.img} key={index}/>
         })}
     </div>
   )
