@@ -108,7 +108,7 @@ const Testimonials = () => {
                 
                 {testimonials.map((testimonial,index)=>{
                     return (
-                        <CarouselItem className={`basis1/1 md:basis-1/3 lg:basis-1/5 md:pl-[9rem]`} key={index}>
+                        <CarouselItem className={`pb-10 basis1/1 md:basis-1/3 lg:basis-1/5 md:pl-[9rem]`} key={index}>
                             <div className={`relative py-6 px-10 h-[540px] md:h-[480px] md:w-[400px] bg-[#F5F2ED] rounded-md ${current===index?'translate-y-8 transition':''}
                                 ${checkNextOrPrev(index)?'translate-y-4 transition':''}`}>
                                 <Image src={quote} alt="''"></Image>
