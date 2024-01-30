@@ -131,7 +131,7 @@ const TimeLine = ({data}:TimelineProps)=>{
                 <div className="flex flex-col md:flex-row w-[60%] md:w-[100%] gap-y-14 md:gap-y-0 gap-x-4">
                     {data.map((event,index)=>{
                         return (
-                            <div className=" flex gap-y-1 md:gap-y-4 flex-col items-center text-[16px] md:text-[20px] leading-[26px] w-full">
+                            <div key={index} className=" flex gap-y-1 md:gap-y-4 flex-col items-center text-[16px] md:text-[20px] leading-[26px] w-full">
                                 <h2 className="font-[700]">{event.date}</h2>
                                 <p className="text-center w-[70%]">{event.content}</p>
                             </div>

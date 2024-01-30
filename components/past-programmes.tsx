@@ -72,7 +72,7 @@ const PastProgrammes = () => {
         
                 {carouselData.map((item,index)=>{
                     return (
-                        <div className={`transition-all ${currentIndex===index?'flex':'hidden'}`}>
+                        <div key={index} className={`transition-all ${currentIndex===index?'flex':'hidden'}`}>
                     
                                 <Image src={item.img} alt={item.name} className='w-full h-[45vh] md:h-[70vh] object-contain'></Image>
                                 <div className='text-white absolute -bottom-6 md:-bottom-8 left-1/2 -translate-x-1/2 rounded-[50px] px-8 md:px-12 py-3 bg-black text-[16px] md:text-[30px] transition'>
