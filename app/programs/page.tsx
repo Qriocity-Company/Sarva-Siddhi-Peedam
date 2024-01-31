@@ -292,7 +292,7 @@ const Stages = ()=>{
                     {
                         dotsData.map((item,index)=>{
                             return(
-                                <div className="flex flex-col items-center">
+                                <div key={index} className="flex flex-col items-center">
                                     <div key={index} className="p-2  bg-white rounded-full">
                                         <div className={`h-5 w-5 md:h-10 md:w-10 rounded-full`} style={{backgroundColor:item.color}}>
 
@@ -367,7 +367,7 @@ const SpecialPrograms=()=>{
                     
                     specialProgramsData1.map((item,index)=>{
                         return (
-                            <div className="flex text-[16px] md:text-[30px] gap-3">
+                            <div key={index} className="flex text-[16px] md:text-[30px] gap-3">
                                 <span className="font-[700]">{index+1+"."} </span>
                                 <span className="font-[700]">{item.heading} </span>
                                 <span>{item.content}</span>
@@ -382,7 +382,7 @@ const SpecialPrograms=()=>{
                     
                     specialProgramsData2.map((item,index)=>{
                         return (
-                            <div className="flex text-[16px] md:text-[30px] gap-3">
+                            <div key={index} className="flex text-[16px] md:text-[30px] gap-3">
                                 <span className="font-[700]">{index+9+"."} </span>
                                 <span className="font-[700]">{item.heading} </span>
                                 <span>{item.content}</span>
