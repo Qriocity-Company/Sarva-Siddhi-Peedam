@@ -49,10 +49,10 @@ const page = () => {
   return (
     <div className="w-full overflow-x-hidden font-khand flex flex-col items-center">
         
-        <h1 className="my-10 md:my-20 text-center leading-[72px] text-[60px] md:text-[68px] font-bold ">About <span className="text-[#FFA63E]">Us </span></h1>
+        <h1 className="my-8 md:my-16 text-center leading-[72px] text-[60px] md:text-[68px] font-bold ">About <span className="text-[#FFA63E]">Us </span></h1>
 
         
-        <div className="w-[90%] my-6 md:my-20 block md:flex items-center justify-between"> 
+        <div className="w-[90%] mt-0 my-6 md:my-20 md:mt-0 block md:flex items-center justify-between"> 
             <div className="order-2 md:w-[45%] w-full flex justify-center md:justify-end">
                 <Image src={aboutFirst} alt="img" unoptimized className=""></Image>
             </div>
@@ -62,7 +62,7 @@ const page = () => {
                     <h1 className="text-black font-[700] text-[48px] leading-[51px]">Dhyanam (SSSD)</h1>
                 </div>
 
-                <div className="mt-10">
+                <div className="mt-6 md:mt-10">
                     {aboutContent.meditationPractice.map((para,index)=>(
                         <p key={index} className="text-[20px] leading-[26.6px] mb-6">
                             {para.content}
