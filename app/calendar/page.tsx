@@ -79,8 +79,6 @@ const TimeLine = ({data}:TimelineProps)=>{
 
             <div className="flex justify-center md:justify-normal md:flex-col w-[90%] items-center gap-y-6">
 
-
-
                 <div className="flex flex-col md:hidden items-center h-full">
                     <div className="h-5  w-5 bg-black border-none rounded-full"></div>
                     <div className={`w-1 h-[70px] bg-black`}></div>
@@ -110,7 +108,7 @@ const TimeLine = ({data}:TimelineProps)=>{
                     {
                         Array.from({ length: 5 }).map((_,index)=>{
                             return(
-                                <div key={index} className={` flex w-full items-center ${index===4?'w-[49.8%]':'w-full'}`}>
+                                <div key={index} className={` flex  items-center ${index===4?'w-[49.8%]':'w-full'}`}>
                                     <div  className="rounded-full border-[3px] border-black p-2">
                                         <div className="h-6 w-6 bg-[#FFA63E] border-none rounded-full">
 
