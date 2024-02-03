@@ -4,20 +4,20 @@ import templeSecond from "@/assets/about/temple-2.png"
 
 const temples = [
     {
-        title1:"Sri Prathiyangira Devi",
+        title1:"Sri Pratyangira Devi",
         title2:"Velvi Peedam",
         content:[
-            "Devi Pratyangira was perfected by two Rishis, Maharishi Pratyangaras and Maharishi Angiras. The Maha Yogmaya Devi herself declared that she would be known by the name “Pratyangira”. The Rishis, Angras and Prathyangaras, have shared Sri Maha Prathyangira Devi’s powerful mantra: “Om Sam Pakshak Jwala Jigwe Karala Thamstre Prathyangere Sham Hreem Hum pat”",
+            "Devi Pratyangira was perfected by two Rishis, Maharishi Pratyangaras and Maharishi Angiras. The Maha Yogmaya Devi herself declared that she would be known by the name “Pratyangira”. The Rishis, Angras and Prathyangaras, have shared Sri Maha Pratyangira Devi’s powerful mantra: “Om Sam Pakshak Jwala Jigwe Karala Thamstre Prathyangere Sham Hreem Hum pat”",
             "Pratyangira worship is only done by the guidance of a Guru who is proficient in Tantra and Mantra. Worships dedicated to Pratyangira are performed for the welfare of the people and for eliminating the influences of evil forces. Here at Dharapuram, Sri Pratyangira Devi Velvi Peedam, Pratyangira Homam is performed by her child Swami Sarvanandar on the days of Amavasya and Poornima."
         ],
         img:templeFirst
     },
     {
         title1:"Goddess Bala",
-        title2:"Tripura Sundari",
+        title2:"Thripura Sundari",
         content:[
-            "Bala Tripurasundari is the younger aspect and daughter of the Goddess Tripuri Sundari. She is a prime and most important goddess of the Tantric Shri Vidya tradition. Residing in the Bindu of the Sri Chakra or Maha Meru, bearing the appearance of a nine- to eleven-year-old and possessing great powers, Goddess Bala Tripurasundari, is Adiparashakti herself.",
-            "Tripura means the goddess who assumes the three forms. Bala as a child, fully grown as Tripura Bhairavi, and formless as Maha Tripurasundari. The Beeja Mantra chanting of “Aim Kleem Saum, Saum Kleem Aim” provides the seeker a calm and steady mind to face any adversities. Those who worship Bala Tripurasundari will achieve purity in the soul."
+            "Bala Thripurasundari is the younger aspect and daughter of the Goddess Thripura Sundari. She is a prime and most important goddess of the Tantric Shri Vidya tradition. Residing in the Bindu of the Sri Chakra or Maha Meru, bearing the appearance of a nine- to eleven-year-old and possessing great powers, Goddess Bala Thripurasundari, is Adiparashakti herself.",
+            "Thripura means the goddess who assumes the three forms. Bala as a child, fully grown as Thripura Bhairavi, and formless as Maha Thripurasundari. The Beeja Mantra chanting of “Aim Kleem Saum, Saum Kleem Aim” provides the seeker a calm and steady mind to face any adversities. Those who worship Bala Thripurasundari will achieve purity in the soul."
         ],
         img:templeSecond
     },

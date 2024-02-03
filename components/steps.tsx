@@ -40,14 +40,14 @@ const stepsData = [
     },
     {
         title:"Sharing",
-        img:thirdImg,
+        img:fourthImg,
         content:"Let’s share goodness and god-ness with all creations. Direct experience of sharing universal energy with all living beings will be initiated and the phenomenon would be Magical.",
         even:false,
         last:false
     },
     {
         title:"Blessings",
-        img:fourthImg,
+        img:thirdImg,
         content:"Finally let’s merge in the divine source to become one and resolve to bless others as a reflection of your own divinity. Let’s find the path towards realising",
         even:true,
         last:true

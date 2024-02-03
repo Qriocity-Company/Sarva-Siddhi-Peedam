@@ -15,7 +15,7 @@ const CalendarHeader = ()=>{
             <div className="absolute left-[10%] top-1/2 -translate-y-1/2 w-[80%] md:w-[50%] flex flex-col gap-y-4 md:gap-y-6">
                 <h1 className="text-[30px] leading-[35px] md:text-[76px] md:leading-[82px] font-[700]">Maha Shivratri Celebrations</h1>
                 <p className="text-[15px] leading-[18px] md:text-[27px] md:leading-[37px] font-[500]">March 8th @Dharapuram between 4AM-4PM</p>
-                <button className="w-fit font-[700] text-[14px] md:text-[18px] leading-[25px] bg-[#FFA63E] px-6 md:px-10 py-2 md:py-3 rounded-md border-none hover:bg-[#ff9a26]">Register Now</button>
+                <button className="w-fit text-white font-[700] text-[14px] md:text-[18px] leading-[25px] bg-black px-6 md:px-10 py-2 md:py-3 rounded-md border-none ">Register Now</button>
             </div>
         </div>
     )
