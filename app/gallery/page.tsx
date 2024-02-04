@@ -7,6 +7,7 @@ import { useState } from 'react'
 import firstImg from "@/assets/gallery/first/DSC00374.png"
 import sixthImg from "@/assets/gallery/first/DSC00446.jpg"
 import secondImg from "@/assets/gallery/first/DSC00457.png"
+
 import thirdImg from "@/assets/gallery/first/DSC00462.png"
 import fourthImg from "@/assets/gallery/first/DSC00511.png"
 import fivthImg from "@/assets/gallery/first/DSC00540.png"
