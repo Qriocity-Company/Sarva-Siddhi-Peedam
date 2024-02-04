@@ -7,14 +7,6 @@ import baba from "@/assets/calendar/baba.png"
 import mangalore from "@/assets/calendar/mangalore.png"
 import delhi from "@/assets/calendar/delhi.png"
 import Image from 'next/image'
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
- 
-  } from "@/components/ui/carousel"
 import { ChevronLeftCircle, ChevronRightCircle } from 'lucide-react'
 
 const carouselData = [

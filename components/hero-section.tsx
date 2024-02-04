@@ -5,11 +5,27 @@ import quote from "../assets/home/quote.svg"
 import Image from "next/image"
 import { useEffect, useState } from "react"
 import '@/styles/hero.css'
+import { Carousel ,CarouselContent,CarouselItem} from "./ui/carousel"
+import Autoplay from "embla-carousel-autoplay"
+
+export function Example() {
+  return (
+    <Carousel
+      plugins={[
+        Autoplay({
+          delay: 2000,
+        }),
+      ]}
+    >
+      // ...
+    </Carousel>
+  )
+}
 
 const HeroSection = () => {
 
   const [currentIndex,setCurrentIndex] = useState(0);
-  const carouselContent = [
+  const carouselData = [
     "Remember that you are the pure consciousness, which is immortal.",
     "Your pure consciousness is covered with knowledge, past experiences, and emotions. Learn to unlearn these aspects to become free.",
     "Form or matter evolves in space, space is the dark matter where all creations happen, understand that you are also a creator",
@@ -17,13 +33,7 @@ const HeroSection = () => {
     "Let us all live in Sarva Ananda, as a fulfilled being in the state of Paripoornam - the way to MOKSHA",
   ];
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselContent.length);
-    }, 5000); // Change the interval duration in milliseconds
 
-    return () => clearInterval(interval);
-  }, []);
   return (
     <>
     <div className="w-full relative">
@@ -42,9 +52,31 @@ const HeroSection = () => {
         <h2 className="text-center font-bold text-[30px] md:text-[60px]">MESSAGE FROM SWAMI AYYA</h2>
         
         <div className=" w-[80%]">
+          <Carousel 
+            opts={{
+              loop: true,
+            }} 
+            plugins={[
+              Autoplay({
+                delay: 6000,
+              }),]}
 
+            >
+            <CarouselContent>
+              {carouselData.map((item,index)=>{
+                return (
+                  <CarouselItem key={index}>
+                    <p className="text-center font-regular text-[22px] leading-[28px] md:leading-[50px] md:text-[45px]">
+                      {item}
+                    </p>
+                  </CarouselItem>
+                )
+              })}
+            </CarouselContent>
 
-            <p className="text-center font-regular text-[22px] leading-[28px] md:leading-[50px] md:text-[45px]">Remember that you are the pure consciousness, which is immortal</p>
+          </Carousel>
+
+            {/* <p className="text-center font-regular text-[22px] leading-[28px] md:leading-[50px] md:text-[45px]">Remember that you are the pure consciousness, which is immortal</p> */}
          
         </div>
 

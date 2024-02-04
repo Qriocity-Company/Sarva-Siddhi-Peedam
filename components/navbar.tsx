@@ -24,6 +24,7 @@ export const Navbar = () => {
         <Link href="/about">About Us</Link>
         <Link href="/programs">Programs</Link>
         <Link href="/calendar">Event Calender</Link>
+        <Link href="/gallery">Gallery</Link>
         <Link href="/contact" className="">Contact Us</Link>
       </div>
       <div className="md:hidden flex items-center justify-between">
@@ -47,6 +48,7 @@ export const Navbar = () => {
           <Link href="/about" onClick={toggleMenu}>About Us</Link>
           <Link href="/programs" onClick={toggleMenu}>Programs</Link>
           <Link href="/calendar" onClick={toggleMenu}>Event Calender</Link>
+          <Link href="/gallery" onClick={toggleMenu}>Gallery</Link>
           <Link href="/contact" onClick={toggleMenu}>Contact Us</Link>
         </div>
       )}
