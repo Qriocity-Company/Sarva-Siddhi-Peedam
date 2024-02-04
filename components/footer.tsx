@@ -67,7 +67,7 @@ const Footer = () => {
                     </Link>
                 </div>
                 <div className="mt-12 md:mt-0 text-center md:text-justify text-[#646464] text-[13px] font-[400]">
-                © 2024 - Sarva Sidhdhi Peedam All Right Reserved
+                © 2024 - Sarva Siddhi Peedam All Rights Reserved
                 </div>
 
             </div>

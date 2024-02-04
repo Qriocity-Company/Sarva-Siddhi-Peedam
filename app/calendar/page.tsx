@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import headerImg from "@/assets/calendar/calendar-header.png"
 
@@ -5,6 +7,8 @@ import headerImg from "@/assets/calendar/calendar-header.png"
 import borderImg from "@/assets/footer/footer-border.png"
 import PastProgrammes from "@/components/past-programmes"
 import Footer from "@/components/footer"
+import { useState } from "react"
+import DonatePopup from "@/components/donate-popup"
 
 
 const CalendarHeader = ()=>{
@@ -14,7 +18,7 @@ const CalendarHeader = ()=>{
 
             <div className="absolute left-[10%] top-1/2 -translate-y-1/2 w-[80%] md:w-[50%] flex flex-col gap-y-4 md:gap-y-6">
                 <h1 className="text-[30px] leading-[35px] md:text-[76px] md:leading-[82px] font-[700]">Maha Shivratri Celebrations</h1>
-                <p className="text-[15px] leading-[18px] md:text-[27px] md:leading-[37px] font-[500]">March 8th @Dharapuram between 4AM-4PM</p>
+                <p className="text-[15px] leading-[18px] md:text-[27px] md:leading-[37px] font-[500]">March 8th @Dharapuram between 4PM-4AM</p>
                 <button className="w-fit text-white font-[700] text-[14px] md:text-[18px] leading-[25px] bg-black px-6 md:px-10 py-2 md:py-3 rounded-md border-none ">Register Now</button>
             </div>
         </div>
@@ -143,6 +147,9 @@ const TimeLine = ({data}:TimelineProps)=>{
 }
 
 const February = ()=>{
+
+    const [open,setOpen] = useState(false)
+
     return (
         <div className="w-full font-khand relative flex flex-col items-center text-black">
 
@@ -154,23 +161,25 @@ const February = ()=>{
                         <span className="font-[700]">
                             STAGE 1 :
                         </span>
-                        SANKALPA MUDRA INITIATION - UNDERSTANDING Maha Mudra : Classes will be held ONLINE Feb 3rd, 4th, 10th, 11th.
+                        SANKALPA MUDRA INITIATION - UNDERSTANDING Maha Mudra : Classes will be held ONLINE Feb 10th, 11th, 17th, 18th.
                     </p>
                 </div>
                 <div className="w-full bg-[#F5F2ED] border-2 border-black shadow-[2px_4px_0px_#000000] px-4 py-4 flex items-center justify-center rounded-lg">
                     <p className="text-[18px] leading-[24px] md:text-[22px] md:leading-[29px]">
-                    February weekends Sat and Sun Zoom class Stage 1 between 10-12pm.
+                    February Every weekends Sat and Sun Zoom class Stage 1 between 5pm - 7pm.
                     </p>
                 </div>
             </div>
+            <button className="w-fit font-[700] mt-8 text-[22px] leading-[29px] bg-[#FFA63E] px-12 py-3 flex items-center rounded-md border-none hover:bg-[#ff9114] text-white" onClick={()=>setOpen(true)}>Register Now</button>
 
             <TimeLine data={timeline_data_1}/>
-
-            <button className="w-fit font-[700] text-[22px] leading-[29px] bg-[#FFA63E] px-12 py-3 flex items-center rounded-md border-none hover:bg-[#ff9114] text-white">Register Now</button>
+            {open && <DonatePopup setOpen={setOpen}/>}
         </div>
     )
 }
 const MarchApril = ()=>{
+
+    const [open,setOpen] = useState(false)
     return (
         <div className="w-full font-khand relative flex flex-col items-center text-black">
 
@@ -191,10 +200,10 @@ const MarchApril = ()=>{
                     </p>
                 </div>
             </div>
+            <button className="w-fit mt-8 font-[700] text-[22px] leading-[29px] bg-[#FFA63E] px-12 py-3 flex items-center rounded-md border-none hover:bg-[#ff9114] text-white" onClick={()=>setOpen(true)}>Register Now</button>
 
             <TimeLine data={timeline_data_2}/>
-
-            <button className="w-fit font-[700] text-[22px] leading-[29px] bg-[#FFA63E] px-12 py-3 flex items-center rounded-md border-none hover:bg-[#ff9114] text-white">Register Now</button>
+            {open && <DonatePopup setOpen={setOpen}/>}
         </div>
     )
 }
@@ -218,6 +227,7 @@ const pujaData=[
     },
 ]
 const PujaDetails = ()=>{
+    const [open,setOpen] = useState(false)
     return (
         <div className="w-full font-khand  flex flex-col items-center mb-10">
 
@@ -231,7 +241,7 @@ const PujaDetails = ()=>{
                             <span className="flex-1 font-[700] md:w-[25%]">{element.title}</span>
                             <span className="flex-1">{element.content}</span>
                             <div className="flex-1 md:justify-end flex">
-                                <button className="w-fit font-[700] text-[16px] leading-[22px] md:text-[22px] md:leading-[29px] bg-[#FFA63E] px-2 md:px-8 py-2 md:py-3 flex items-center rounded-md border-none hover:bg-[#ff9114] text-white">Register Now</button>
+                                <button className="w-fit font-[700] text-[16px] leading-[22px] md:text-[22px] md:leading-[29px] bg-[#FFA63E] px-2 md:px-8 py-2 md:py-3 flex items-center rounded-md border-none hover:bg-[#ff9114] text-white" onClick={()=>setOpen(true)}>Register Now</button>
 
                             </div>
                         </div>
@@ -239,7 +249,7 @@ const PujaDetails = ()=>{
                 })}
 
             </div>
-
+            {open && <DonatePopup setOpen={setOpen}/>}
         </div>
     )
 }

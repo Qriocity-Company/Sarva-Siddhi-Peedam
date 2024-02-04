@@ -4,7 +4,7 @@
 import Image, { StaticImageData } from "next/image"
 import border from "@/assets/footer/footer-border.png"
 import { ChevronLeftCircle, ChevronRightCircle } from "lucide-react"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import ModalCarousel from "./modal-carousel"
 
 interface GalleryComponentProps{
@@ -19,6 +19,15 @@ const GalleryComponent = ({title,content,images,firstImg,last}:GalleryComponentP
 
     const [open,setOpen] = useState(false);
 
+    const handleOpenModal = ()=>{
+      document.body.style.overflow = 'hidden';
+      console.log("chala")
+      setOpen(true);
+
+    }
+
+    
+
   return (
     <div className={`${last?'mb-10 md:mb-20':''}  w-full flex flex-col items-center bg-[#F5F2ED]`}>
         <Image src={border} alt="img" className="w-full md:my-20 my-10"></Image>
@@ -28,7 +37,7 @@ const GalleryComponent = ({title,content,images,firstImg,last}:GalleryComponentP
         </div>
         <p className="w-[90%] md:w-[80%] text-center text-[15px] leading-[22px] md:text-[20px] md:leading-[30px] mb-6 md:mb-6">{content}</p>
 
-        {last && <div className="w-[90%] mb-6 md:mb-12 flex gap-4 items-center">
+        {last && <div className="w-[90%] mb-6 md:mb-12 flex justify-center gap-4 items-center">
             <h2 className='text-[#FFA63E] text-[50px] leading-[54px] md:text-[102px] md:leading-[109px] font-[700]'>100</h2>
             <h1 className='text-[30px] md:text-[41px] leading-[30px] md:leading-[44px] font-[700]'>
             People attended the event
@@ -36,9 +45,9 @@ const GalleryComponent = ({title,content,images,firstImg,last}:GalleryComponentP
         </div>}
 
         <div className='w-[90%] p-4 md:p-8 border-black border-[1px] relative flex justify-center items-center'>
-        <Image src={firstImg} alt='img' className='max-h-[300px] md:max-h-full md:h-[500px] w-auto object-contain'></Image>
-        <ChevronLeftCircle onClick={()=>setOpen(true)} className='absolute h-5 w-5 md:w-8 md:h-8 left-[0.5%] md:left-4 top-1/2 -translate-y-1/2'/>
-        <ChevronRightCircle onClick={()=>setOpen(true)} className='absolute h-5 w-5 md:w-8 md:h-8 right-[0.5%] md:right-4 top-1/2 -translate-y-1/2'/>
+        <Image src={firstImg} onClick={handleOpenModal} alt='img' className='max-h-[300px] md:max-h-full md:h-[500px] w-auto object-contain'></Image>
+        <ChevronLeftCircle onClick={handleOpenModal} className='absolute h-5 w-5 md:w-8 md:h-8 left-[0.5%] md:left-4 top-1/2 -translate-y-1/2'/>
+        <ChevronRightCircle onClick={handleOpenModal} className='absolute h-5 w-5 md:w-8 md:h-8 right-[0.5%] md:right-4 top-1/2 -translate-y-1/2'/>
       </div>
     
       {open && <ModalCarousel images={images} setOpen={setOpen}/>}

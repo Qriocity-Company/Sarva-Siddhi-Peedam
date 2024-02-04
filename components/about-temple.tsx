@@ -34,8 +34,8 @@ interface TempleComponentProps{
 const TempleComponent = ({img,content,title1,title2}:TempleComponentProps)=>{
     return(
         <div className="w-[90%] block md:flex justify-between font-khand mb-20 md:mb-40">
-            <div className="md:w-[45%] w-full flex items-center justify-start">
-                <Image src={img} alt="temple image"></Image>
+            <div className="md:w-[45%] rounded-lg w-full flex items-center justify-start">
+                <Image src={img} alt="temple image" className=""></Image>
             </div>
             <div className="md:w-[45%] mt-8 md:mt-0 w-full flex flex-col justify-center">
                 <div>

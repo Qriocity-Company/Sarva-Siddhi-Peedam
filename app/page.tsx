@@ -1,19 +1,32 @@
+"use client"
+
+
+import DonatePopup from "@/components/donate-popup";
 import Faqs from "@/components/faq";
 import Footer from "@/components/footer";
 import HeroSection from "@/components/hero-section";
 import Steps from "@/components/steps";
 import Testimonials from "@/components/testimonials";
-import Video from 'next-video';
-import Image from "next/image";
-// import last from "../videos/agnihotram.mp4"
-import last from "../assets/home/last.png"
+
+
+import { useEffect, useState } from "react";
 
 export default function Home() {
-  console.log("video asset : ",last);
-  // const videoUrl = last.src;
+  const [open,setOpen] = useState(false);
 
+  useEffect(() => {
+    
+    const timeoutId = setTimeout(() => {
+      setOpen(true);
+    }, 5000);
+
+    return () => clearTimeout(timeoutId);
+
+  }, []); 
   return (
     <div className="w-full overflow-x-hidden">
+      
+      {/* {open && <DonatePopup setOpen={setOpen} /> } */}
       <HeroSection/>
       <Steps/>
       <Testimonials/>

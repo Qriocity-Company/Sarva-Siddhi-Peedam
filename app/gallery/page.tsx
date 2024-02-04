@@ -4,13 +4,17 @@ import border from "../../assets/footer/footer-border.png"
 import ModalCarousel from '@/components/modal-carousel'
 import { useState } from 'react'
 
-import firstImg from "@/assets/gallery/first/DSC00348.png"
-import secondImg from "@/assets/gallery/first/DSC00358.png"
-import thirdImg from "@/assets/gallery/first/DSC00374.png"
-import fourthImg from "@/assets/gallery/first/DSC00457.png"
-import fivthImg from "@/assets/gallery/first/DSC00462.png"
-import sixthImg from "@/assets/gallery/first/DSC00511.png"
-import seventhImg from "@/assets/gallery/first/DSC00540.png"
+import firstImg from "@/assets/gallery/first/DSC00374.png"
+import sixthImg from "@/assets/gallery/first/DSC00446.jpg"
+import secondImg from "@/assets/gallery/first/DSC00457.png"
+import thirdImg from "@/assets/gallery/first/DSC00462.png"
+import fourthImg from "@/assets/gallery/first/DSC00511.png"
+import fivthImg from "@/assets/gallery/first/DSC00540.png"
+import seventhImg from "@/assets/gallery/first/DSC00464.jpg"
+import eigthImg from "@/assets/gallery/first/DSC00466.jpg"
+import ninthImg from "@/assets/gallery/first/DSC00472.jpg"
+import tenthImg from "@/assets/gallery/first/DSC00500.jpg"
+
 
 import DelhiFirst from "@/assets/gallery/second/20230625_171021.png"
 import DelhiSecond from "@/assets/gallery/second/20230625_182559.png"
@@ -50,6 +54,8 @@ import ammaTwelfth from "@/assets/gallery/fivth/Screenshot 2024-02-03 at 11.44.p
 import mahaFirst from "@/assets/gallery/sixth/WhatsApp Image 2024-02-03 at 2.15 (1).png"
 import mahaSecond from "@/assets/gallery/sixth/WhatsApp Image 2024-02-03 at 2.15 (2).png"
 import mahaThird from "@/assets/gallery/sixth/WhatsApp Image 2024-02-03 at 2.16.png"
+import mahaFourth from "@/assets/gallery/sixth/new-1.jpg"
+import mahaFivth from "@/assets/gallery/sixth/new-2.jpg"
 
 import spaceFirst from "@/assets/gallery/seventh/20240121_115328.png"
 import spaceSecond from "@/assets/gallery/seventh/20240121_170636.png"
@@ -69,8 +75,16 @@ const First = ()=>{
     fourthImg,
     fivthImg,
     sixthImg,
-    seventhImg
+    seventhImg,
+    eigthImg,
+    ninthImg,
+    tenthImg
   ]
+
+  const handleOpen=()=>{
+    document.body.style.overflow="hidden";
+    setOpen(true);
+  }
 
   return(
     <div className=' w-full bg-[#F5F2ED] md:p-6 flex flex-col items-center'>
@@ -115,12 +129,12 @@ const First = ()=>{
 
 
       <div className='w-[90%] p-4 md:p-8 border-black border-[1px] relative flex justify-center items-center'>
-        <Image src={firstImg} alt='img' className='md:h-[500px] w-auto object-contain'></Image>
-        <ChevronLeftCircle onClick={()=>setOpen(true)} className='absolute h-5 w-5 md:w-8 md:h-8 left-[0.5%] md:left-4 top-1/2 -translate-y-1/2'/>
-        <ChevronRightCircle onClick={()=>setOpen(true)} className='absolute h-5 w-5 md:w-8 md:h-8 right-[0.5%] md:right-4 top-1/2 -translate-y-1/2'/>
+        <Image src={thirdImg} onClick={handleOpen} alt='img' className='md:h-[500px] w-auto object-contain'></Image>
+        <ChevronLeftCircle onClick={handleOpen} className='absolute h-5 w-5 md:w-8 md:h-8 left-[0.5%] md:left-4 top-1/2 -translate-y-1/2'/>
+        <ChevronRightCircle onClick={handleOpen} className='absolute h-5 w-5 md:w-8 md:h-8 right-[0.5%] md:right-4 top-1/2 -translate-y-1/2'/>
       </div>
 
-      {open && <ModalCarousel images={[firstImg,secondImg,thirdImg,fourthImg,fivthImg,sixthImg,seventhImg]} setOpen={setOpen}/>}
+      {open && <ModalCarousel images={firstData} setOpen={setOpen}/>}
     </div>
   )
 }
@@ -142,7 +156,7 @@ const page = () => {
 
         <GalleryComponent title={"Ammavasai Celebrated on Jan 11th 2024"} content={"Amavasya Homam and Your Life in your Hands Workshop, - At Dharapuram.On this day we saw an ethereal experience of the divine flow of energy at the Peedam followed by a session revealing the secrets of the form and formlessness of the Shiva Lingam."} images={[ammaFirst, ammaSecond, ammaThird, ammaFourth, ammaFifth, ammaSixth, ammaSeventh, ammaEighth, ammaNinth, ammaTenth, ammaEleventh, ammaTwelfth]} firstImg={ammaFifth} last={false}/>
 
-        <GalleryComponent title={"Mahashivratri Celebrations (2022)"} content={"Around 150 people attend this celebration every year from all parts of South India. At Dharapuram the celebration is pure in the essence of Shivratri from mantra chanting to Vibhuti Abhishekam, Anna dhanam and a Grand Homam. The place vibrates with the high energy of Chanting “Om Namah Sivaya” throughout the night. An event worth participating for true followers of the Shiva Shakti Cosmos."} images={[mahaFirst,mahaSecond,mahaThird]} firstImg={mahaSecond} last={false}/>
+        <GalleryComponent title={"Mahashivratri Celebrations (2022)"} content={"Around 150 people attend this celebration every year from all parts of South India. At Dharapuram the celebration is pure in the essence of Shivratri from mantra chanting to Vibhuti Abhishekam, Anna dhanam and a Grand Homam. The place vibrates with the high energy of Chanting “Om Namah Sivaya” throughout the night. An event worth participating for true followers of the Shiva Shakti Cosmos."} images={[mahaFirst,mahaSecond,mahaThird,mahaFourth,mahaFivth]} firstImg={mahaFourth} last={false}/>
 
         <GalleryComponent title={"Space: Formlessness to Form : Science Conference Chennai 21st jan 2024."} content={"Swami Aiyya’s take on Theory of space was presented by his First Disciple : Jayanthi Amma at a science conference in Chennai. The paper was well received by ISRO scientists and HOD of Philosophy. The audience was convinced with the truth in the presentation and have invited our team to participate in National Forums on Science and Spirituality."} images={[spaceFirst,spaceSecond]} firstImg={spaceFirst} last={true}/>
 

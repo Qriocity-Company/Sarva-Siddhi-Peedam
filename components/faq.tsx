@@ -10,9 +10,13 @@ const faqs = [
         answer:"SSSD is a simple technique that can be performed with eyes open as well as closed. At anytime of the day and anywhere."
     },
     {
-        question:"How long does the practise take?",
+        question:"How long does the practice take?",
         answer:"It is most beneficial if practised for 1 hour, initially 10 mins is powerful too."
     },
+    {
+      question:"What will I benefit from this meditation?",
+      answer:"Clarity in all aspects of living - Letting go, Self Imporovement and Focus, Enhance mental, physical and material realm, Strong relationships with family and friends, Leadership qualities, Solving your own problems, Body and mind in Balance, Better organized, Energetic, Do something good for the world by realizing the absolute truth."
+  },
     {
         question:"Is there a time and place to do this?",
         answer:"Any time and any place , take a few minutes to fine tune yourself before an important meeting, activity or event, so that you are in tune with nature and abundance will be provided to you."
@@ -21,10 +25,7 @@ const faqs = [
         question:"How many different stages are in the curriculum of becoming a light being?",
         answer:"There are 10 stages to become a Light Being"
     },
-    {
-        question:"What will I benefit from this meditation?",
-        answer:"Clarity in all aspects of living - Letting go, Self Imporovement and Focus, Enhance mental, physical and material realm, Body and mind in Balance."
-    },
+    
 ]
 const Faqs = () => {
 
