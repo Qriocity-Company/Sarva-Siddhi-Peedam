@@ -3,28 +3,14 @@ import bgImg from "@/assets/home/hero-bg.png"
 import objectImg from "@/assets/home/hero-object.png"
 import quote from "../assets/home/quote.svg"
 import Image from "next/image"
-import { useEffect, useState } from "react"
+
 import '@/styles/hero.css'
 import { Carousel ,CarouselContent,CarouselItem} from "./ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
 
-export function Example() {
-  return (
-    <Carousel
-      plugins={[
-        Autoplay({
-          delay: 2000,
-        }),
-      ]}
-    >
-      // ...
-    </Carousel>
-  )
-}
 
 const HeroSection = () => {
 
-  const [currentIndex,setCurrentIndex] = useState(0);
   const carouselData = [
     "Remember that you are the pure consciousness, which is immortal.",
     "Your pure consciousness is covered with knowledge, past experiences, and emotions. Learn to unlearn these aspects to become free.",
@@ -48,7 +34,7 @@ const HeroSection = () => {
 
     </div>
     <div className="bg-[#FFF9EE] p-6 pt-14 font-khand flex flex-col justify-center items-center gap-y-2 relative">
-        <Image src={quote} alt="''" className="h-8 w-8 md:h-auto md:w-auto absolute top-5 md:top-8 left-[5%] md:left-[10%]"></Image>
+        <Image src={quote} alt="-" className="h-8 w-8 md:h-auto md:w-auto absolute top-5 md:top-8 left-[5%] md:left-[10%]"></Image>
         <h2 className="text-center font-bold text-[30px] md:text-[60px]">MESSAGE FROM SWAMI AYYA</h2>
         
         <div className=" w-[80%]">
@@ -75,8 +61,6 @@ const HeroSection = () => {
             </CarouselContent>
 
           </Carousel>
-
-            {/* <p className="text-center font-regular text-[22px] leading-[28px] md:leading-[50px] md:text-[45px]">Remember that you are the pure consciousness, which is immortal</p> */}
          
         </div>
 

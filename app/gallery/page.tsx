@@ -101,7 +101,7 @@ const First = ()=>{
             Program Outcome
           </div>
           <div className='text-[17px] leading-[24px]  md:text-[20px] md:leading-[30px]'>
-          Developed an appreciation for nature's five elements within and without. Learnt simple methods of body, mind and balance. Realised the importance of sound, light and colour in our lives and how they can help to create safer, calmer and pristine environments for us.
+          Developed an appreciation for nature&apos;s five elements within and without. Learnt simple methods of body, mind and balance. Realised the importance of sound, light and colour in our lives and how they can help to create safer, calmer and pristine environments for us.
           </div>
         </div>
 
