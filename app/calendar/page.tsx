@@ -219,7 +219,7 @@ const pujaData=[
 ]
 const PujaDetails = ()=>{
     return (
-        <div className="w-full font-khand  flex flex-col items-center">
+        <div className="w-full font-khand  flex flex-col items-center mb-10">
 
             <h1 className="my-8 md:my-12 font-[700] leading-[26px] text-[24px] md:text-[48px] md:leading-[51px] text-center">Puja Details</h1> 
 
@@ -264,7 +264,7 @@ const page = () => {
 
         <PujaDetails/>
 
-        <PastProgrammes/>
+        {/* <PastProgrammes/> */}
 
         <Footer/>
     </div>

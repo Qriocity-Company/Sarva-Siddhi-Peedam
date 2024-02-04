@@ -44,7 +44,7 @@ const HeroSection = () => {
             }} 
             plugins={[
               Autoplay({
-                delay: 6000,
+                delay: 4500,
               }),]}
 
             >

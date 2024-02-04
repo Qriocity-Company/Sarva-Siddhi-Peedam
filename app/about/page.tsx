@@ -92,7 +92,7 @@ const page = () => {
             </div>
         </div>
         <AboutSwami/>
-
+        <iframe className="rounded-xl md:w-[80%] w-[90%] md:h-[70vh] mt-10 md:mt-20" width="560" height="315" src="https://www.youtube.com/embed/QhMAkOxtuww?si=P2R8Q_3uk3KulyF8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
         <div className="w-full mt-20">
             <Image src={divider} alt="" className="w-full" unoptimized></Image>
         </div>
