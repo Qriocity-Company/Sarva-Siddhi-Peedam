@@ -157,6 +157,9 @@ const page = () => {
         <GalleryComponent title={"Karma Cleaning- Delhi Blessing - June 2023"} content={"An evening where 63 people gathered to receive one on one blessings from Aiyya They received good karma blessings from Aiyya and gave him their bad karma. A self transformative experience. People were amazed at the energy exchange from Aiyya for all the 63 people who had come there."} images={[DelhiSixth,DelhiSecond,DelhiFourth,DelhiFivth,DelhiFirst]} firstImg={DelhiSixth} last={false}
         videos={["https://www.youtube.com/embed/6SaRs8UdBa4","https://www.youtube.com/embed/R31L4RytjA0?si=xUN7Fe1ZrBZCAWcf"]}/>
 
+
+        
+
         <GalleryComponent title={"Sarva Siddhi Sankalpa Dhyanam - Receiving Energy  Delhi 2 day Stage 1 and 2 - September 2023"} content={"A 2 day program, 20 people gathered to experience the divine energy and further practised karma cleaning with the Siva Lingam Meditation. Many reported that they slept well, had a magical experience, and experienced weightlessness. Their continued practise has given them phenomenal changes in life. Share testimonials"} images={[sarvaSecond,sarvaFirst,sarvaThird,sarvaFourth,sarvaFifth,]} firstImg={sarvaSecond} last={false}
         videos={[]}/>
 

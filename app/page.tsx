@@ -5,10 +5,11 @@ import DonatePopup from "@/components/donate-popup";
 import Faqs from "@/components/faq";
 import Footer from "@/components/footer";
 import HeroSection from "@/components/hero-section";
-import { Navbar } from "@/components/navbar";
+
 import Steps from "@/components/steps";
 import Testimonials from "@/components/testimonials";
-
+import Video from 'next-video'
+import agnihotram from "@/videos/agnihotram.mp4"
 
 import { useEffect, useState } from "react";
 
@@ -35,6 +36,7 @@ export default function Home() {
       <div className="relative py-20 font-khand w-full flex flex-col items-center">
 
         <iframe className="rounded-md w-[90%] md:w-[80%] md:h-[70vh]"  src="https://www.youtube.com/embed/1e2yru-hDfA?si=FV4uRP4wxY6N1_O_" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+
 
         {/* <Image src={last} alt="agnihotram" className="md:w-[80vw]"></Image> */}
         <div className="absolute z-20 bottom-[30%] md:bottom-[25%] right-[8%] md:right-[15%]">
