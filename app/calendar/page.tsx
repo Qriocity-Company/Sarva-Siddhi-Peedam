@@ -228,7 +228,7 @@ const MarchApril = ()=>{
                     {
                         marchContent.map((item,index)=>{
                             return (
-                                <div className="flex gap-2">
+                                <div className="flex gap-2" key={index}>
                                     <span className="font-semibold text-[18px] leading-[24px] md:text-[22px] md:leading-[29px] text-[#FFA63E]">{item.title} -</span>
                                     <p key={index} className="font-semibold text-[18px] leading-[24px] md:text-[22px] md:leading-[29px]">
                                     {item.content}
@@ -245,7 +245,7 @@ const MarchApril = ()=>{
                     {
                         ShivratriContent.map((item,index)=>{
                             return (
-                                <div className="flex gap-2">
+                                <div className="flex gap-2" key={index}>
                                     <span className="font-semibold text-[18px] leading-[24px] md:text-[22px] md:leading-[29px] text-[#FFA63E] w-fit text-nowrap md:w-auto">{item.title} </span>
                                     <p key={index} className="font-semibold text-[18px] leading-[24px] md:text-[22px] md:leading-[29px]">
                                     {item.content}
