@@ -1,4 +1,4 @@
-
+"use client"
 import Image from "next/image"
 import Link from "next/link"
 import header from "../../assets/contact/contact-header.png"
@@ -9,20 +9,54 @@ import fb  from "../../assets/footer/fb.png"
 import insta from "../../assets/footer/insta.png"
 import youtube from "../../assets/footer/youtube.png"
 import ContactFooter from "@/components/contact-footer"
+import { useState } from "react"
 
 const page = () => {
-
-    const openGoogleMap = () => {
-        // Replace the latitude and longitude with the desired location
-        const latitude = 37.7749;
-        const longitude = -122.4194;
-        const zoom = 15; // You can adjust the zoom level as needed
     
-        // Construct the Google Maps URL
-        const url = `https://www.google.com/maps?q=${latitude},${longitude}&z=${zoom}`;
+    const [formData, setFormData] = useState({
+        name: "",
+        number: "",
+        email: "",
+        message: "",
+      });
     
-        // Open Google Maps in a new tab
-        window.open(url, '_blank');
+      const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+    
+        if(formData.number.length!=10){
+            return;
+        }
+        try {
+          const response = await fetch("/api/send", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          });
+    
+          if (response.ok) {
+            console.log("Email sent successfully");
+            // You can add further logic here for success
+          } else {
+            console.error("Error sending email");
+            // You can add further logic here for error handling
+          }
+          setFormData({
+            name: "",
+            number: "",
+            email: "",
+            message: "",
+          });
+        } catch (error) {
+          console.error("Error:", error);
+          // You can add further logic here for error handling
+        }
+      };
+    
+      const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+        setFormData((prevData) => ({ ...prevData, [name]: value }));
       };
 
   return (
@@ -36,27 +70,27 @@ const page = () => {
 
             <h2 className="my-5 md:my-10 font-[700] text-center text-[40px] md:text-[48px] ">LET&apos;S ANSWER YOUR QUERIES</h2>
 
-            <form action="" className="w-full">
+            <form onSubmit={(e)=>handleSubmit(e)} className="w-full">
 
                 <div className="block md:flex gap-32">
                     <div className="flex flex-col gap-y-4 w-full md:w-[50%]">
                         <div className="flex flex-col gap-1 w-full">
                             <label htmlFor="" className="font-[500] text-[20px] text-[#919191]">FIRST NAME</label>
-                            <input type="text"  className="p-3 border-[1px] border-[#8E8E8E80] outline-none w-full"/>
+                            <input type="text" name="name" onChange={(e)=>handleChange(e)} className="p-3 border-[1px] border-[#8E8E8E80] outline-none w-full" required/>
                         </div>
                         <div className="flex flex-col gap-1 w-full">
                             <label htmlFor="" className="font-[500] text-[20px] text-[#919191]">MOBILE NUMBER</label>
-                            <input type="text"  className="p-3 border-[1px] border-[#8E8E8E80] outline-none w-full"/>
+                            <input required type="number" name="number" onChange={(e)=>handleChange(e)}  className="p-3 border-[1px] border-[#8E8E8E80] outline-none w-full"/>
                         </div>
                         <div className="flex flex-col gap-1 w-full">
                             <label htmlFor="" className="font-[500] text-[20px] text-[#919191]">EMAIL</label>
-                            <input type="text"  className="p-3 border-[1px] border-[#8E8E8E80] outline-none w-full"/>
+                            <input required type="text" name="email" onChange={(e)=>handleChange(e)} className="p-3 border-[1px] border-[#8E8E8E80] outline-none w-full"/>
                         </div>
 
                     </div>
                     <div className="w-full md:w-[50%] mt-4 md:mt-0 flex flex-col gap-1">
                         <label htmlFor="" className="font-[500] text-[20px] text-[#919191]">LEAVE A MESSAGE FOR US</label>
-                        <textarea className=" w-full p-3 border-[1px] border-[#8E8E8E80] outline-none h-full" placeholder="" />
+                        <textarea required name="message" onChange={(e)=>handleChange(e)} className=" w-full p-3 border-[1px] border-[#8E8E8E80] outline-none h-full" placeholder="" />
                     </div>
                 </div>
 

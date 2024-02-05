@@ -5,7 +5,7 @@ const resend = new Resend("re_hymAbmDW_8WLkQJ7oh7EBZ9wz4ZELx3AM")
 export async function POST(req:Request){
     try {
         
-        const {name,number,email} = await req.json(); 
+        const {name,number,email,message} = await req.json(); 
 
         const res = await resend.emails.send({
 
@@ -16,6 +16,7 @@ export async function POST(req:Request){
                 <h3>Sender Name : ${name} </h3>
                 <h3>Sender Email : ${email} </h3>
                 <h3>Sender Mobile Number : ${number} </h3>
+                <h3>Sender Mobile Number : ${message} </h3>
             `
         })
         return new NextResponse('Email sent successfully', { status: 200 });
