@@ -29,7 +29,7 @@ const Footer = () => {
                         </div>  
                         <div className="flex gap-6">
                             <Image src={call} alt="phone"></Image>
-                            <p>(+91)-98863 67610</p>
+                            <p>(+91)-98863 67610 / (+91) - 90037 10199</p>
                         </div>  
                     </div>
                 </div>

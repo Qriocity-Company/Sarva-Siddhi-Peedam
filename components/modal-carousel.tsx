@@ -48,8 +48,8 @@ const ModalCarousel = ({images,setOpen,videos}:ModalCarouselProps) => {
                     })
                 }
             </CarouselContent>
-            <CarouselPrevious className='h-5 w-5 md:h-8 md:w-8 z-100'/>
-            <CarouselNext className='h-5 w-5 md:h-8 md:w-8 z-100'/>
+            <CarouselPrevious className='h-5 w-5 md:h-10 md:w-10 z-100 bg-[#FFA63E] font-[700]'/>
+            <CarouselNext className='h-5 w-5 md:h-10 md:w-10 z-100 bg-[#FFA63E] font-[700]'/>
         </Carousel>
     </div>
   )

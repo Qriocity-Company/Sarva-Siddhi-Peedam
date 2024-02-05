@@ -13,10 +13,11 @@ interface GalleryComponentProps{
     images:StaticImageData[],
     firstImg:StaticImageData,
     last:boolean,
-    videos:string[]
+    videos:string[],
+    attendee:string
 }
 
-const GalleryComponent = ({title,content,images,firstImg,last,videos}:GalleryComponentProps) => {
+const GalleryComponent = ({title,content,images,firstImg,last,videos,attendee}:GalleryComponentProps) => {
 
     const [open,setOpen] = useState(false);
 
@@ -38,10 +39,10 @@ const GalleryComponent = ({title,content,images,firstImg,last,videos}:GalleryCom
         </div>
         <p className="w-[90%] md:w-[80%] text-center text-[15px] leading-[22px] md:text-[20px] md:leading-[30px] mb-6 md:mb-6">{content}</p>
 
-        {last && <div className="w-[90%] mb-6 md:mb-12 flex justify-center gap-4 items-center">
-            <h2 className='text-[#FFA63E] text-[50px] leading-[54px] md:text-[102px] md:leading-[109px] font-[700]'>100</h2>
+        {<div className="w-[90%] mb-6 md:mb-12 flex justify-center gap-4 items-center">
+            <h2 className='text-[#FFA63E] text-[50px] leading-[54px] md:text-[102px] md:leading-[109px] font-[700]'>{attendee}</h2>
             <h1 className='text-[30px] md:text-[41px] leading-[30px] md:leading-[44px] font-[700]'>
-            People attended the event
+            People got Benefitted
             </h1>
         </div>}
 

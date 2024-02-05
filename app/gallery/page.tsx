@@ -97,7 +97,7 @@ const First = ()=>{
         Energy Retreat - Recognize the Five Elements - Thiruvanamalai
       </div>
       <h2 className='md:text-[30px] w-[90%] font-[600] text-[18px] leading-[20px] md:leading-[45px] text-center'>
-      Thiruvanamalai a 3 day between 7th to 9th April 2023
+      Thiruvanamalai a 3 day retreat between 7th to 9th April 2023
       </h2>
 
       <div className='flex w-[90%] md:flex-row flex-col items-start justify-between md:gap-14 gap-8 md:my-10 my-8'>
@@ -125,7 +125,7 @@ const First = ()=>{
         </div>
 
         <div className='w-full md:w-[20%]'>
-          <h2 className='text-[#FFA63E] text-[70px] leading-[74px] md:text-[102px] md:leading-[109px] font-[700]'>24</h2>
+          <h2 className='text-[#FFA63E] text-[70px] leading-[74px] md:text-[102px] md:leading-[109px] font-[700]'>25</h2>
           <h1 className='text-[30px] md:text-[41px] leading-[34px] md:leading-[44px] font-[700]'>
           People attended the event
           </h1>
@@ -155,22 +155,22 @@ const page = () => {
         <First/>
 
         <GalleryComponent title={"Karma Cleaning- Delhi Blessing - June 2023"} content={"An evening where 63 people gathered to receive one on one blessings from Aiyya They received good karma blessings from Aiyya and gave him their bad karma. A self transformative experience. People were amazed at the energy exchange from Aiyya for all the 63 people who had come there."} images={[DelhiSixth,DelhiSecond,DelhiFourth,DelhiFivth,DelhiFirst]} firstImg={DelhiSixth} last={false}
-        videos={["https://www.youtube.com/embed/6SaRs8UdBa4","https://www.youtube.com/embed/R31L4RytjA0?si=xUN7Fe1ZrBZCAWcf"]}/>
+        videos={["https://www.youtube.com/embed/6SaRs8UdBa4","https://www.youtube.com/embed/R31L4RytjA0?si=xUN7Fe1ZrBZCAWcf"]} attendee={"63+"}/>
 
 
         
 
         <GalleryComponent title={"Sarva Siddhi Sankalpa Dhyanam - Receiving Energy  Delhi 2 day Stage 1 and 2 - September 2023"} content={"A 2 day program, 20 people gathered to experience the divine energy and further practised karma cleaning with the Siva Lingam Meditation. Many reported that they slept well, had a magical experience, and experienced weightlessness. Their continued practise has given them phenomenal changes in life. Share testimonials"} images={[sarvaSecond,sarvaFirst,sarvaThird,sarvaFourth,sarvaFifth,]} firstImg={sarvaSecond} last={false}
-        videos={[]}/>
+        videos={[]} attendee={"20+"}/>
 
         <GalleryComponent title={"Receiving Energy - Bangalore 2 day Stage 2 December 9th and 10th 2023"} content={"Karma Clearing, Aura Healing and Connection with Nature. Participants could get over past baggages and generate new found karma for themselves. They could experience energy without touch and they were mind blow as plants and trees responded to them. Share testimonials."} images={[BangaloreFifth,BangaloreFirst, BangaloreSecond, BangaloreThird, BangaloreFourth,  BangaloreSixth, BangaloreSeventh, BangaloreEighth]} firstImg={BangaloreFifth} last={false}
-        videos={[]}/>
+        videos={[]} attendee={"20+"}/>
 
-        <GalleryComponent title={"Ammavasai Celebrated on Jan 11th 2024"} content={"Amavasya Homam and Your Life in your Hands Workshop, - At Dharapuram.On this day we saw an ethereal experience of the divine flow of energy at the Peedam followed by a session revealing the secrets of the form and formlessness of the Shiva Lingam."} images={[ammaFifth,ammaNinth,   ammaSeventh, ammaEighth , ammaTenth, ammaEleventh, ammaTwelfth,ammaFourth,ammaSecond, ammaThird,  ammaSixth,]} firstImg={ammaFifth} last={false} videos={[]}/>
+        <GalleryComponent title={"Ammavasai Celebrated on Jan 11th 2024"} content={"Amavasya Homam and Your Life in your Hands Workshop, - At Dharapuram.On this day we saw an ethereal experience of the divine flow of energy at the Peedam followed by a session revealing the secrets of the form and formlessness of the Shiva Lingam."} images={[ammaFifth,ammaNinth,   ammaSeventh, ammaEighth , ammaTenth, ammaEleventh, ammaTwelfth,ammaFourth,ammaSecond, ammaThird,  ammaSixth,]} firstImg={ammaFifth} last={false} videos={[]} attendee={"100+"}/>
 
-        <GalleryComponent title={"Mahashivratri Celebrations (2022)"} content={"Around 150 people attend this celebration every year from all parts of South India. At Dharapuram the celebration is pure in the essence of Shivratri from mantra chanting to Vibhuti Abhishekam, Anna dhanam and a Grand Homam. The place vibrates with the high energy of Chanting “Om Namah Sivaya” throughout the night. An event worth participating for true followers of the Shiva Shakti Cosmos."} images={[mahaFourth,mahaFivth,mahaFirst,mahaSecond,mahaThird]} firstImg={mahaFourth} last={false} videos={[]}/>
+        <GalleryComponent title={"Mahashivratri Celebrations (2022)"} content={"Around 150 people attend this celebration every year from all parts of South India. At Dharapuram the celebration is pure in the essence of Shivratri from mantra chanting to Vibhuti Abhishekam, Anna dhanam and a Grand Homam. The place vibrates with the high energy of Chanting “Om Namah Sivaya” throughout the night. An event worth participating for true followers of the Shiva Shakti Cosmos."} images={[mahaFourth,mahaFivth,mahaFirst,mahaSecond,mahaThird]} firstImg={mahaFourth} last={false} videos={[]} attendee={"150+"}/>
 
-        <GalleryComponent title={"Space: Formlessness to Form : Science Conference Chennai 21st jan 2024."} content={"Swami Aiyya’s take on Theory of space was presented by his First Disciple : Jayanthi Amma at a science conference in Chennai. The paper was well received by ISRO scientists and HOD of Philosophy. The audience was convinced with the truth in the presentation and have invited our team to participate in National Forums on Science and Spirituality."} images={[spaceFirst,spaceSecond]} firstImg={spaceFirst} last={true} videos={[]}/>
+        <GalleryComponent title={"Space: Formlessness to Form : Science Conference Chennai 21st jan 2024."} content={"Swami Aiyya’s take on Theory of space was presented by his First Disciple : Jayanthi Amma at a science conference in Chennai. The paper was well received by ISRO scientists and HOD of Philosophy. The audience was convinced with the truth in the presentation and have invited our team to participate in National Forums on Science and Spirituality."} images={[spaceFirst,spaceSecond]} firstImg={spaceFirst} last={true} videos={[]} attendee={"100+"}/>
 
         
         <Footer/>

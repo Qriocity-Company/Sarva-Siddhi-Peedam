@@ -11,7 +11,7 @@ const swamiInfo = [
     content: "At the age of 25, he realized his true self and was attracted to God attributes. All of his learnings were from his Mansika Guru and couple of Living Guru’s, astral journeys and spiritual revelations, during trance, in silence or in meditation."
   },
   {
-    content: "At the age of 35 years he became a Devi Upasakar and developed into Mastering Sarva Siddhi Sankalpa Dhyanam. This led him to build Sri Prathyangira Devi Velvi Peedam, Dharapuram."
+    content: "At the age of 35, he became a Devi Upasakar and developed into Mastering Sarva Siddhi Sankalpa Dhyanam. This led him to build Sri Pratyangira Devi Velvi Peedam, Dharapuram."
   },
   {
     content: "Swami Aiyya has always stepped up to provide Selfless love, motherly care and strong resolve to help people in distress, He has been guided by the divine to spread his learnings for greater common good."
