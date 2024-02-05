@@ -65,7 +65,7 @@ const DonatePopup = ({ setOpen }:DonatePopupProps) => {
 
   return (
     <div className="h-[100vh] w-full fixed top-0 left-0 bg-[rgba(0,0,0,0.7)] flex items-center justify-center z-50 font-khand">
-      <div className="bg-white p-6 md:w-[500px] md:px-8 flex flex-col items-center relative">
+      <div className="bg-white p-6 w-[90%] md:w-[500px] md:px-8 flex flex-col items-center relative">
         <X
           className="h-6 cursor-pointer w-6 text-black absolute right-4 top-4"
           onClick={() => setOpen(false)}
@@ -90,7 +90,8 @@ const DonatePopup = ({ setOpen }:DonatePopupProps) => {
               Mobile Number
             </label>
             <input
-              type="number"
+              type="text" 
+              maxLength={10} pattern="\d{10}"
               id="mobileNumber"
               name="number"
               value={formData.number}

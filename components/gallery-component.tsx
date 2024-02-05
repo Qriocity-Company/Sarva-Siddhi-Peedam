@@ -12,10 +12,11 @@ interface GalleryComponentProps{
     content:string,
     images:StaticImageData[],
     firstImg:StaticImageData,
-    last:boolean
+    last:boolean,
+    videos:string[]
 }
 
-const GalleryComponent = ({title,content,images,firstImg,last}:GalleryComponentProps) => {
+const GalleryComponent = ({title,content,images,firstImg,last,videos}:GalleryComponentProps) => {
 
     const [open,setOpen] = useState(false);
 
@@ -50,7 +51,7 @@ const GalleryComponent = ({title,content,images,firstImg,last}:GalleryComponentP
         <ChevronRightCircle onClick={handleOpenModal} className='absolute h-5 w-5 md:w-8 md:h-8 right-[0.5%] md:right-4 top-1/2 -translate-y-1/2'/>
       </div>
     
-      {open && <ModalCarousel images={images} setOpen={setOpen}/>}
+      {open && <ModalCarousel images={images} setOpen={setOpen} videos={videos}/>}
     </div>
   )
 }
