@@ -26,6 +26,10 @@ const DonatePopup = ({ setOpen }:DonatePopupProps) => {
   const handleSubmit =async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
    
+    if(formData.number.length<9 || formData.number.length>10){
+      return;
+    }
+
     console.log('Form submitted with data:', formData);
     
     try {
@@ -77,6 +81,7 @@ const DonatePopup = ({ setOpen }:DonatePopupProps) => {
               First Name
             </label>
             <input
+              required
               type="text"
               id="firstName"
               name="name"
@@ -90,7 +95,8 @@ const DonatePopup = ({ setOpen }:DonatePopupProps) => {
               Mobile Number
             </label>
             <input
-              type="text" 
+              required
+              type="number" 
               maxLength={10} pattern="\d{10}"
               id="mobileNumber"
               name="number"
@@ -104,6 +110,7 @@ const DonatePopup = ({ setOpen }:DonatePopupProps) => {
               Email
             </label>
             <input
+              required
               type="email"
               id="email"
               name="email"

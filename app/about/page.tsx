@@ -25,7 +25,7 @@ const aboutContent={
     ],
     trustInformation : [
         {
-          content: "Sarva Siddhi Peedam Trust came into effect in the year 2023. Purpose of the Trust is to share this simple technique of SSSD to one and all."
+          content: "Sarva Siddhi Peedam Trust came into effect in the year 2023. Purpose of the Trust is to share this simple technique of Sarva Siddhi Sankalpa Dhayanam with one and all. This initiative has been spearheaded with the grace of Swami Aiyya and by his Disciple Jayanthi Amma"
         },
         {
           content: "Swami Aiyya has graciously agreed to share this technique that he has been experimenting with for the past two decades and this method would help us live life to the fullest."
@@ -79,7 +79,7 @@ const page = () => {
             <div className="order-1 md:w-[45%] w-full mt-8 md:mt-0">
                 <div>
                     <h1 className="text-black font-[700] text-[48px] leading-[51px]">Sarva Siddhi</h1>
-                    <h1 className="text-[#FFA63E] font-[700] text-[48px] leading-[51px]">Dhyanam (SSSD)</h1>
+                    <h1 className="text-[#FFA63E] font-[700] text-[48px] leading-[51px]">Peedam Trust (SSPT)</h1>
                 </div>
 
                 <div className="mt-8">
