@@ -401,7 +401,7 @@ const SpecialPrograms=()=>{
 const page = () => {
   return (
     <div className="w-full font-khand  flex flex-col items-center">
-        <h1 className="my-4 md:my-12 text-center  md:leading-[72px] text-[40px] md:text-[68px] font-bold "><span className="text-[#FFA63E]">Event </span> Calendar</h1>
+        <h1 className="my-4 md:my-12 text-center  md:leading-[72px] text-[40px] md:text-[68px] font-bold "><span className="text-[#FFA63E]">Our </span> Programs</h1>
 
         <ProgramsHeader/>
         <HeaderCards/>

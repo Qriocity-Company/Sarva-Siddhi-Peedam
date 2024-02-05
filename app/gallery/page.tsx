@@ -65,6 +65,7 @@ import spaceSecond from "@/assets/gallery/seventh/20240121_170636.png"
 import { ChevronLeftCircle, ChevronRightCircle } from 'lucide-react'
 import GalleryComponent from '@/components/gallery-component'
 import Footer from '@/components/footer'
+import { useNavbarContext } from '@/context/NavbarContext'
 
 
 const First = ()=>{
@@ -86,10 +87,14 @@ const First = ()=>{
     tw
   ]
 
+  const { showNavbar, setShowNavbar } = useNavbarContext();
+
   const handleOpen=()=>{
     document.body.style.overflow="hidden";
     setOpen(true);
+    setShowNavbar(false);
   }
+
 
   return(
     <div className=' w-full bg-[#F5F2ED] md:p-6 flex flex-col items-center'>

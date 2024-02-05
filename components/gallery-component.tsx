@@ -6,6 +6,7 @@ import border from "@/assets/footer/footer-border.png"
 import { ChevronLeftCircle, ChevronRightCircle } from "lucide-react"
 import { useEffect, useState } from "react"
 import ModalCarousel from "./modal-carousel"
+import { useNavbarContext } from "@/context/NavbarContext"
 
 interface GalleryComponentProps{
     title:string,
@@ -21,10 +22,13 @@ const GalleryComponent = ({title,content,images,firstImg,last,videos,attendee}:G
 
     const [open,setOpen] = useState(false);
 
+    const { showNavbar, setShowNavbar } = useNavbarContext();
+
+
     const handleOpenModal = ()=>{
       document.body.style.overflow = 'hidden';
       setOpen(true);
-      localStorage.setItem("modalOpen","true");
+      setShowNavbar(false);
     }
 
     // console.log("First image in gallery component : ",firstImg)

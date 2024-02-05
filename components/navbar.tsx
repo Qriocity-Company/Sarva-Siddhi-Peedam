@@ -4,16 +4,20 @@ import Image from "next/image";
 import { HiMenu, HiX } from "react-icons/hi";
 import logo from "../assets/home/logo.png";
 import Link from "next/link";
+import { useNavbarContext } from "@/context/NavbarContext";
 
 export const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
-  
+  const { showNavbar, setShowNavbar } = useNavbarContext();
+
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
   
+
+  if(showNavbar)
   return (
 
     <div className=" w-[100vw] flex justify-between bg-[#371D15] items-center px-4 md:px-[48px] py-[1rem] sticky top-0 md:text-[12px] lg:text-[16px] z-50">
@@ -58,4 +62,6 @@ export const Navbar = () => {
 
     </div>
   );
+
+  return null;
 };

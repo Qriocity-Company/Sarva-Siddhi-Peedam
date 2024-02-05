@@ -6,6 +6,7 @@ import localfont from "next/font/local"
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { useEffect, useState } from "react";
+import { NavbarContextProvider } from "@/context/NavbarContext";
 
 const inter = Inter({ subsets: ["latin"] });
 const bremenb = localfont({
@@ -65,9 +66,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${bremenb.variable} ${khand.variable}`}>
-        {modalOpen?null:<Navbar/>}
-         {/* {!modalOpen && <Navbar/>} */}
-        {children}
+        <NavbarContextProvider>
+          <Navbar/>
+          {children}
+
+        </NavbarContextProvider>
       </body>
     </html>
   );
