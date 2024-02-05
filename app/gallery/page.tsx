@@ -15,7 +15,8 @@ import seventhImg from "@/assets/gallery/first/DSC00464.png"
 import eigthImg from "@/assets/gallery/first/DSC00466.png"
 import ninthImg from "@/assets/gallery/first/DSC00472.png"
 import tenthImg from "@/assets/gallery/first/DSC00500.png"
-
+import eleventh from "@/assets/gallery/first/IMG-20240204-WA0056.png"
+import tw from "@/assets/gallery/first/IMG-20240204-WA0057.png"
 
 import DelhiFirst from "@/assets/gallery/second/20230625_171021.png"
 import DelhiSecond from "@/assets/gallery/second/20230625_182559.png"
@@ -64,6 +65,7 @@ import spaceSecond from "@/assets/gallery/seventh/20240121_170636.png"
 import { ChevronLeftCircle, ChevronRightCircle } from 'lucide-react'
 import GalleryComponent from '@/components/gallery-component'
 import Footer from '@/components/footer'
+import { Navbar } from '@/components/navbar'
 
 const First = ()=>{
 
@@ -79,7 +81,9 @@ const First = ()=>{
     seventhImg,
     eigthImg,
     ninthImg,
-    tenthImg
+    tenthImg,
+    eleventh,
+    tw
   ]
 
   const handleOpen=()=>{
@@ -143,6 +147,7 @@ const First = ()=>{
 const page = () => {
   return (
     <div className='w-full flex flex-col items-center font-khand'>
+
         <h1 className="my-4 md:my-12 text-center  md:leading-[72px] text-[40px] md:text-[68px] font-bold ">Gallery</h1>
 
         <Image src={border} alt='-' className='w-full mb-10 md:mb-20'></Image>

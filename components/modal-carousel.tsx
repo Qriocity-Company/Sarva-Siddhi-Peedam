@@ -13,6 +13,7 @@ const ModalCarousel = ({images,setOpen}:ModalCarouselProps) => {
     const handleClose= ()=>{
         document.body.style.overflow = 'auto';
         setOpen(false);
+        localStorage.removeItem("modalOpen");
     }
 
   return (
@@ -26,7 +27,7 @@ const ModalCarousel = ({images,setOpen}:ModalCarouselProps) => {
                     images.map((img,index)=>{
                         return(
                             <CarouselItem key={index} className='basis1/1 mx-5 flex items-center'>
-                                <Image src={img} alt='img' className=' md:h-[500px] w-auto m-auto'></Image>
+                                <Image src={img} alt='img' className=' md:h-[550px] w-auto m-auto'></Image>
                             </CarouselItem>
                         )
                     })

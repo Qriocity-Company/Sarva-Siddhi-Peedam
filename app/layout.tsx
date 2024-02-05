@@ -1,8 +1,11 @@
+"use client"
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import localfont from "next/font/local"
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
+import { useEffect, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 const bremenb = localfont({
@@ -34,7 +37,7 @@ const khand = localfont({
   ],
   variable:"--font-khand"
 })
-export const metadata: Metadata = {
+ const metadata: Metadata = {
   title: "Sarva Siddhi Peedam",
   description: "Welcome to Sarva Siddhi Peedam, a sacred space dedicated to the profound teachings of Swami Sarvanandhar and Swami Ayya. Immerse yourself in the divine experience of eternal wealth through the Four Steps to Divinity.",
 };
@@ -44,10 +47,26 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const [modalOpen,setModalOpen] = useState(false);
+  // console.log("current status",status);
+  useEffect(()=>{
+    // const status = localStorage.getItem("modalOpen")
+
+    if(localStorage.getItem("modalOpen")){
+      setModalOpen(true);
+    }
+    else{
+      setModalOpen(false);
+    }
+
+  },[modalOpen])
+
   return (
     <html lang="en">
       <body className={`${bremenb.variable} ${khand.variable}`}>
-        <Navbar/>
+        {modalOpen?null:<Navbar/>}
+         {/* {!modalOpen && <Navbar/>} */}
         {children}
       </body>
     </html>

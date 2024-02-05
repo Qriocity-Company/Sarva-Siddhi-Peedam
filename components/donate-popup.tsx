@@ -11,8 +11,8 @@ interface DonatePopupProps {
 
 const DonatePopup = ({ setOpen }:DonatePopupProps) => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    mobileNumber: '',
+    name: '',
+    number: '',
     email: '',
   });
 
@@ -23,17 +23,43 @@ const DonatePopup = ({ setOpen }:DonatePopupProps) => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit =async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Add your form submission logic here
+   
     console.log('Form submitted with data:', formData);
-    // Reset form data if needed
+    
+    try {
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        console.log('Email sent successfully');
+        // Reset form data if needed
+        setFormData({
+          name: '',
+          number: '',
+          email: '',
+        });
+        // Close the popup
+        setOpen(false);
+      } else {
+        console.error('Failed to send email');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+
     setFormData({
-      firstName: '',
-      mobileNumber: '',
+      name: '',
+      number: '',
       email: '',
     });
-    // Close the popup
+    
     setOpen(false);
   };
 
@@ -45,7 +71,7 @@ const DonatePopup = ({ setOpen }:DonatePopupProps) => {
           onClick={() => setOpen(false)}
         />
         <h2 className="mb-2 my-4 text-center font-bold text-[20px] md:text-[30px]">Register Now</h2>
-        <form onSubmit={handleSubmit} className="w-full">
+        <form onSubmit={handleSubmit} className="w-full text-black">
           <div className="flex flex-col gap-1 mb-3 w-full">
             <label htmlFor="firstName" className="text-[#919191] text-[20px] leading-[30px]">
               First Name
@@ -53,8 +79,8 @@ const DonatePopup = ({ setOpen }:DonatePopupProps) => {
             <input
               type="text"
               id="firstName"
-              name="firstName"
-              value={formData.firstName}
+              name="name"
+              value={formData.name}
               onChange={handleChange}
               className="border-[1px] border-[#8E8E8E80] outline-none p-2 px-4"
             />
@@ -66,8 +92,8 @@ const DonatePopup = ({ setOpen }:DonatePopupProps) => {
             <input
               type="number"
               id="mobileNumber"
-              name="mobileNumber"
-              value={formData.mobileNumber}
+              name="number"
+              value={formData.number}
               onChange={handleChange}
               className="border-[1px] border-[#8E8E8E80] outline-none p-2 px-4"
             />

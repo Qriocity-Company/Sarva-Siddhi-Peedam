@@ -5,6 +5,7 @@ import DonatePopup from "@/components/donate-popup";
 import Faqs from "@/components/faq";
 import Footer from "@/components/footer";
 import HeroSection from "@/components/hero-section";
+import { Navbar } from "@/components/navbar";
 import Steps from "@/components/steps";
 import Testimonials from "@/components/testimonials";
 
@@ -25,7 +26,6 @@ export default function Home() {
   }, []); 
   return (
     <div className="w-full overflow-x-hidden">
-      
       {/* {open && <DonatePopup setOpen={setOpen} /> } */}
       <HeroSection/>
       <Steps/>

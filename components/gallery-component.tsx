@@ -21,12 +21,12 @@ const GalleryComponent = ({title,content,images,firstImg,last}:GalleryComponentP
 
     const handleOpenModal = ()=>{
       document.body.style.overflow = 'hidden';
-      console.log("chala")
       setOpen(true);
-
+      localStorage.setItem("modalOpen","true");
     }
 
-    
+    // console.log("First image in gallery component : ",firstImg)
+    // console.log("images arrray in gallery component : ",images);
 
   return (
     <div className={`${last?'mb-10 md:mb-20':''}  w-full flex flex-col items-center bg-[#F5F2ED]`}>
