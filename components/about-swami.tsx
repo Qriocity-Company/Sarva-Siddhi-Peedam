@@ -2,7 +2,7 @@ import Image from "next/image";
 import swamiImg from "@/assets/about/about-third.png"
 const swamiInfo = [
   {
-    content: "Swami Sarvanandar, fondly known as Swami Aiyya was born to Saraswati Amma and Devaraj Aiyya. As a child he would like to spend time in silence and introspection and get lost in trance. Swami Aiyya had difficulties in speech as a teenager and usually maintained silence."
+    content: "Swami Sarvanandhar, fondly known as Swami Aiyya was born to Saraswati Amma and Devaraj Aiyya. As a child he would like to spend time in silence and introspection and get lost in trance. Swami Aiyya had difficulties in speech as a teenager and usually maintained silence."
   },
   {
     content: "He loved to spend time in nature and temple premises. Developing a fondness for Lord Shiva, he spent many years chanting his name and also travelled to sacred mountain precincts to spend time in self-contemplation and samadhi. His creative persona chose art as a profession, an expert in Carnatic Music and proficient Flutist."
@@ -27,7 +27,7 @@ const swamiInfo = [
 const AboutSwami = () => {
   return (
     <div className="w-full flex flex-col items-center font-khand">
-         <h1 className="my-12 mt-0 md:mt-12 text-center leading-[46px] md:leading-[72px] text-[40px] md:text-[68px] font-bold ">Swami <span className="text-[#FFA63E]">Sarvanandar </span></h1>
+         <h1 className="my-12 mt-0 md:mt-12 text-center leading-[46px] md:leading-[72px] text-[40px] md:text-[68px] font-bold ">Swami <span className="text-[#FFA63E]">Sarvanandhar </span></h1>
 
 
         <div className="bg-[#F5F2ED] p-6 md:p-12 flex flex-col items-center relative">

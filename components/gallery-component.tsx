@@ -30,7 +30,7 @@ const GalleryComponent = ({title,content,images,firstImg,last,videos}:GalleryCom
     // console.log("images arrray in gallery component : ",images);
 
   return (
-    <div className={`${last?'mb-10 md:mb-20':''}  w-full flex flex-col items-center bg-[#F5F2ED]`}>
+    <div className={`${last?'pb-6 mb-10 md:mb-20':''}  w-full flex flex-col items-center bg-[#F5F2ED]`}>
         <Image src={border} alt="img" className="w-full md:my-20 my-10"></Image>
 
         <div className='text-center bg-[#FFA63E] text-black w-[90%] mb-10 font-[700] text-[20px]leading-[25px] md:text-[44px]  md:leading-[53px] py-3 md:py-6 border-[1px] border-black px-4'>

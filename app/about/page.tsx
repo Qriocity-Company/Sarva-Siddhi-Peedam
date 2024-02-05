@@ -11,7 +11,7 @@ import Footer from "@/components/footer"
 const aboutContent={
     meditationPractice : [
         {
-          content: "Swami Sarvanandar has pioneered Sarva Siddhi Sankalpa Dhyanam, an ancient and simple meditation practice using the Sankalpa Mahamudra. A unique method to heal body, mind and soul."
+          content: "Swami Sarvanandhar has pioneered Sarva Siddhi Sankalpa Dhyanam, an ancient and simple meditation practice using the Sankalpa Mahamudra. A unique method to heal body, mind and soul."
         },
         {
           content: "This practice of meditation involves four steps: Receiving, Saving, Sharing, and Blessing."
