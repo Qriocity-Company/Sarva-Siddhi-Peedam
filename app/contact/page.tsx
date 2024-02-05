@@ -11,7 +11,7 @@ import youtube from "../../assets/footer/youtube.png"
 import ContactFooter from "@/components/contact-footer"
 import { useState } from "react"
 
-const page = () => {
+const Page = () => {
     
     const [formData, setFormData] = useState({
         name: "",
@@ -134,4 +134,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
