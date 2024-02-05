@@ -42,7 +42,7 @@ const GalleryComponent = ({title,content,images,firstImg,last,videos,attendee}:G
         {<div className="w-[90%] mb-6 md:mb-12 flex justify-center gap-4 items-center">
             <h2 className='text-[#FFA63E] text-[50px] leading-[54px] md:text-[102px] md:leading-[109px] font-[700]'>{attendee}</h2>
             <h1 className='text-[30px] md:text-[41px] leading-[30px] md:leading-[44px] font-[700]'>
-            People got Benefitted
+            People were Benefitted
             </h1>
         </div>}
 

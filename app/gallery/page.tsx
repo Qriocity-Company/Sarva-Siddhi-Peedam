@@ -127,7 +127,7 @@ const First = ()=>{
         <div className='w-full md:w-[20%]'>
           <h2 className='text-[#FFA63E] text-[70px] leading-[74px] md:text-[102px] md:leading-[109px] font-[700]'>25</h2>
           <h1 className='text-[30px] md:text-[41px] leading-[34px] md:leading-[44px] font-[700]'>
-          People attended the event
+          People were Benefitted
           </h1>
         </div>
       </div>
@@ -160,10 +160,10 @@ const page = () => {
 
         
 
-        <GalleryComponent title={"Sarva Siddhi Sankalpa Dhyanam - Receiving Energy  Delhi 2 day Stage 1 and 2 - September 2023"} content={"A 2 day program, 20 people gathered to experience the divine energy and further practised karma cleaning with the Siva Lingam Meditation. Many reported that they slept well, had a magical experience, and experienced weightlessness. Their continued practise has given them phenomenal changes in life. Share testimonials"} images={[sarvaSecond,sarvaFirst,sarvaThird,sarvaFourth,sarvaFifth,]} firstImg={sarvaSecond} last={false}
+        <GalleryComponent title={"Sarva Siddhi Sankalpa Dhyanam - Receiving Energy  Delhi, September 2023"} content={"A two day program, 20 people gathered to experience the divine energy and further practised karma cleaning with the Siva Lingam Meditation. Many reported that they slept well, had a magical experience, and experienced weightlessness. Their continued practise has given them phenomenal changes in life. Share testimonials"} images={[sarvaSecond,sarvaFirst,sarvaThird,sarvaFourth,sarvaFifth,]} firstImg={sarvaSecond} last={false}
         videos={[]} attendee={"20+"}/>
 
-        <GalleryComponent title={"Receiving Energy - Bangalore 2 day Stage 2 December 9th and 10th 2023"} content={"Karma Clearing, Aura Healing and Connection with Nature. Participants could get over past baggages and generate new found karma for themselves. They could experience energy without touch and they were mind blow as plants and trees responded to them. Share testimonials."} images={[BangaloreFifth,BangaloreFirst, BangaloreSecond, BangaloreThird, BangaloreFourth,  BangaloreSixth, BangaloreSeventh, BangaloreEighth]} firstImg={BangaloreFifth} last={false}
+        <GalleryComponent title={"Receiving Energy - Bangalore, December 9th and 10th 2023"} content={"Karma Clearing, Aura Healing and Connection with Nature.A two day, participants could get over past baggages and generate new found karma for themselves. They could experience energy without touch and they were mind blow as plants and trees responded to them. Share testimonials."} images={[BangaloreFifth,BangaloreFirst, BangaloreSecond, BangaloreThird, BangaloreFourth,  BangaloreSixth, BangaloreSeventh, BangaloreEighth]} firstImg={BangaloreFifth} last={false}
         videos={[]} attendee={"20+"}/>
 
         <GalleryComponent title={"Ammavasai Celebrated on Jan 11th 2024"} content={"Amavasya Homam and Your Life in your Hands Workshop, - At Dharapuram.On this day we saw an ethereal experience of the divine flow of energy at the Peedam followed by a session revealing the secrets of the form and formlessness of the Shiva Lingam."} images={[ammaFifth,ammaNinth,   ammaSeventh, ammaEighth , ammaTenth, ammaEleventh, ammaTwelfth,ammaFourth,ammaSecond, ammaThird,  ammaSixth,]} firstImg={ammaFifth} last={false} videos={[]} attendee={"100+"}/>

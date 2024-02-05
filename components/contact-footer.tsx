@@ -22,11 +22,11 @@ const ContactFooter = () => {
                     <div className="mt-2 md:mt-6 font-[500] leading-[28px] text-[18px] flex flex-col gap-6">
                         <div className="flex gap-6">
                             <Image src={location} alt="gmail"></Image>
-                            <p>info@sarvasidhipeedam.org</p>
+                            <p>sarvasiddhipeedam@gmail.com</p>
                         </div>  
                         <div className="flex gap-6">
                             <Image src={call} alt="phone"></Image>
-                            <p>(+91)-789-456-123</p>
+                            <p>(+91)-98863 67610 / (+91) - 90037 10199</p>
                         </div>  
                     </div>
                 </div>

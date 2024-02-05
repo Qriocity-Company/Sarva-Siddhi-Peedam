@@ -168,7 +168,7 @@ const specialProgramsData1 = [
     },
     {
         heading:"Atma & You -",
-        content:"not being born again"
+        content:"Not being born again"
     },
 ]
 const specialProgramsData2 = [
@@ -211,9 +211,9 @@ const ProgramsHeader = ()=>{
         <div className="w-full relative flex flex-col items-center">
             <Image src={headerImg} alt="img" className="w-full h-[40vh] object-cover md:h-auto"></Image>
 
-            <div className="text-white absolute left-[10%] top-1/2 -translate-y-1/2">
-                <h1 className="font-[700] text-[25px] leading-[30px] md:text-[57px] md:leading-[61px]">Become a Light Being</h1>
-                <p className="text-[20px] leading-[22px] md:text-[40px] md:leading-[42px]">from stage 1 to 10</p>
+            <div className="text-white absolute right-[5%] top-[40%] -translate-y-1/2">
+                <h1 className="text-[#FFA63E] font-[700] text-[25px] leading-[30px] md:text-[57px] md:leading-[61px]">Become a Light Being</h1>
+                <p className="text-right text-[20px] leading-[22px] md:text-[40px] md:leading-[42px]">Stage 1 to 10</p>
             </div>
 
             
@@ -251,7 +251,7 @@ const Stages = ()=>{
 
             <div className="w-full bg-[#F5F2ED] px-4 md:px-0 py-12 md:py-20">
 
-                <h4 className="mb-10 md:mb-20 text-center text-[22px] md:text-[32px] ">Stage 1 is an online class, all other classes will be 2 to 3 day retreats</h4>
+                {/* <h4 className="mb-10 md:mb-20 text-center text-[22px] md:text-[32px] ">Stage 1 is an online class, all other classes will be 2 to 3 day retreats</h4> */}
 
                 <div className="flex justify-center gap-x-6 md:gap-x-12">
 

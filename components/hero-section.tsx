@@ -37,7 +37,7 @@ const HeroSection = () => {
     <div className="bg-[#FFF9EE] p-6 pt-14 pb-12 font-khand flex flex-col justify-center items-center gap-y-2 relative">
         <Image src={quote} alt="-" className="h-8 w-8 md:h-auto md:w-auto absolute top-5 md:top-8 left-[5%] md:left-[10%]"></Image>
         {/* <Image src={quote} alt="-" className="h-8 w-8 md:h-auto md:w-auto absolute top-5 md:top-8 left-[5%] md:left-[10%] rotate-90"></Image> */}
-        <h2 className="text-center font-bold text-[30px] md:text-[60px]">MESSAGE FROM SWAMI AYYA</h2>
+        <h2 className="text-center font-bold text-[30px] md:text-[60px]">MESSAGE FROM SWAMI AIYYA</h2>
         
         <div className=" w-[80%]">
           <Carousel 
