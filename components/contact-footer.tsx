@@ -15,7 +15,7 @@ const ContactFooter = () => {
             <div className="grid gap-y-4 grid-cols-1 md:row-cols-2 md:grid-cols-2 lg:grid-rows-1 lg:grid-cols-5">
                 <div className="col-span-1 lg:col-span-2">
                     <Image src={footerLogo} alt="Sarva Sidhhi Peedam"></Image>
-                    <p className="w-[90%] md:w-[80%] mt-3 md:mt-6 font-[500] leading-[28px] text-[18px] pl-0 md:pl-2">Swami Sarvanandhar has pioneered Sarva Siddhi Sankalpa Dhyanam, an ancient and simple meditation practise using the Sankalpa Mahamudra.</p>
+                    <p className="w-[90%] md:w-[80%] mt-3 md:mt-6 font-[500] leading-[28px] text-[18px] pl-0 md:pl-2">Swami Sarvanandar has pioneered Sarva Siddhi Sankalpa Dhyanam, an ancient and simple meditation practise using the Sankalpa Mahamudra.</p>
                 </div>
                 <div className="mt-4 md:ml-8 col-span-1 lg:col-span-2">
                     <h2 className="font-[600] text-[36px]">Get in Touch</h2>
