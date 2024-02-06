@@ -140,8 +140,8 @@ const First = ()=>{
 
       <div className='w-[90%] p-4 md:p-8 border-black border-[1px] relative flex justify-center items-center'>
         <Image src={sixthImg} onClick={handleOpen} alt='img' className='md:h-[500px] w-auto object-contain'></Image>
-        <ChevronLeftCircle onClick={handleOpen} className='absolute h-5 w-5 md:w-8 md:h-8 left-[0.5%] md:left-4 top-1/2 -translate-y-1/2'/>
-        <ChevronRightCircle onClick={handleOpen} className='absolute h-5 w-5 md:w-8 md:h-8 right-[0.5%] md:right-4 top-1/2 -translate-y-1/2'/>
+        <ChevronLeftCircle onClick={handleOpen} className='absolute h-5 w-5 md:w-8 md:h-8 left-[0.5%] md:left-4 top-1/2 -translate-y-1/2 bg-[#FFA63E] rounded-full text-white'/>
+        <ChevronRightCircle onClick={handleOpen} className='absolute h-5 w-5 md:w-8 md:h-8 right-[0.5%] md:right-4 top-1/2 -translate-y-1/2 bg-[#FFA63E] rounded-full text-white'/>
       </div>
 
       {open && <ModalCarousel images={firstData} setOpen={setOpen} videos={["https://www.youtube.com/embed/uNGUPTONWak?si=6gtu97GEdWCIqRQ1","https://www.youtube.com/embed/mn4tf22H6SQ?si=-rwMWIcNH1zUZL93"]}/>}

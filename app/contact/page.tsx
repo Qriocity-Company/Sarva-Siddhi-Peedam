@@ -124,7 +124,10 @@ const Page = () => {
                 <iframe className="order-2 rounded-xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.896708009696!2d77.5574706!3d10.742443699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9bfe3744d4f1d%3A0x607fdcd7f6639d9a!2ssri%20pratyangira%20devi%20velvi%20peedam!5e0!3m2!1sen!2sin!4v1707076635809!5m2!1sen!2sin" width="600" height="450" loading="lazy" ></iframe>
                 <div className="order-1 mt-5 md:mt-0">
                     <h1 className="font-[700] text-[30px] leading-[42px] lg:leading-[48px] lg:text-[35px]">Sarva Siddhi Peedam</h1>
-                    <p className="text-[26px] leading-[30px] lg:text-[32px] lg:leading-[42px]">Samy Nagar, Dharapuram, Tamil Nadu, Dharapuram, Tamil Nadu 638673</p>
+                    <div className=" gap-2">
+                        <span className=" text-[26px] leading-[30px] lg:text-[32px] lg:leading-[42px] text-[#FFA63E] font-semibold">Location : </span>
+                        <span className="text-[26px] leading-[30px] lg:text-[32px] lg:leading-[42px]">Samy Nagar, Dharapuram, Tamil Nadu, Dharapuram, Tamil Nadu 638673</span>
+                    </div>
                 </div>
             </div>
         </div>

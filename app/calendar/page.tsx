@@ -9,6 +9,7 @@ import PastProgrammes from "@/components/past-programmes"
 import Footer from "@/components/footer"
 import { useState } from "react"
 import DonatePopup from "@/components/donate-popup"
+import DonateNowForm from "@/components/DonateNowForm"
 
 
 const CalendarHeader = ()=>{
@@ -208,7 +209,7 @@ const MarchApril = ()=>{
         // { title: "", content: "Book release on Shiva yatrai written by Swami Sarvanandar" },
         { title: "6pm-8pm -", content: "Homam and vibhuti abhishekam and panchasharam chanting." },
         { title: "8pm-9pm -", content: "Dinner" },
-        { title: "9pm-11pm -", content: "Dasapashanam lingam, paal abhishekam" },
+        { title: "9pm-11pm -", content: "Navapashana lingam, paal abhishekam" },
         { title: "11pm-2am -", content: "Shiva vadhyam and Cosmic dance" },
         { title: "2am-4am -", content: "Concluding with satsang and Shiva dhyanam" },
     ];
@@ -218,7 +219,10 @@ const MarchApril = ()=>{
     return (
         <div className="w-full font-khand relative flex flex-col items-center text-black">
 
-            <h1 className="my-8 md:my-12 font-[700] leading-[26px] text-[24px] md:text-[48px] md:leading-[51px] text-center">March</h1> 
+            <h1 className="my-8 md:mb-4 font-[700] leading-[26px] text-[24px] md:text-[48px] md:leading-[51px] text-center">March</h1> 
+
+            
+            <TimeLine data={timeline_data_2}/>
 
             <div className="w-[90%] md:w-[80%] bg-[#F5F2ED] border-2 border-black shadow-[2px_4px_0px_#000000] px-4 py-6 block md:flex  justify-around rounded-lg  ">
 
@@ -261,11 +265,28 @@ const MarchApril = ()=>{
             
             <button className="w-fit mt-8 font-[700] text-[22px] leading-[29px] bg-[#FFA63E] px-12 py-3 flex items-center rounded-md border-none hover:bg-[#ff9114] text-white" onClick={()=>setOpen(true)}>Register Now</button>
 
-            <TimeLine data={timeline_data_2}/>
 
 
             {open && <DonatePopup setOpen={setOpen}/>}
         </div>
+    )
+}
+
+const DonateNow = ()=>{
+    return (
+
+        <div className="w-full font-khand  flex flex-col items-center">
+            <h1 className="my-8 md:mb-4 font-[700] leading-[26px] text-[24px] md:text-[48px] md:leading-[51px] text-center">Donate Now</h1> 
+
+
+            <div className="w-[90%] md:w-[55%] bg-[#F5F2ED] border-2 border-black shadow-[2px_4px_0px_#000000] px-4 py-6 block md:flex rounded-lg  ">
+
+                <DonateNowForm />
+            </div>
+
+
+        </div>
+
     )
 }
 
@@ -332,6 +353,8 @@ const page = () => {
         <MarchApril/>
         
         <Image src={borderImg} alt="-" className="w-full object-cover my-10 md:my-20"></Image>
+
+        <DonateNow/>
 
         <PujaDetails/>
 

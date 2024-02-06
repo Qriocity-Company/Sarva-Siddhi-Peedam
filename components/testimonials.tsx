@@ -12,6 +12,7 @@ import {
   } from "@/components/ui/carousel"
 import { type CarouselApi } from "@/components/ui/carousel"
 import { useEffect, useState } from "react"
+import Autoplay from "embla-carousel-autoplay"
 
 const testimonials =[
     {
@@ -40,15 +41,10 @@ const testimonials =[
         place:"Bangalore"
     },
     {
-        content:"With a very open mind I attended this class and the experience has been profound. Between yoga and other spiritual practices, what I learnt here has just stumped me. I felt energy in nature. It has blown my mind. I am truly grateful and have a newfound appreciation for everything in life.",
-        name:"Aditya",
-        place:"Bangalore"
-    },
-    {
-        content:"With a very open mind I attended this class and the experience has been profound. Between yoga and other spiritual practices, what I learnt here has just stumped me. I felt energy in nature. It has blown my mind. I am truly grateful and have a newfound appreciation for everything in life.",
-        name:"Aditya",
-        place:"Bangalore"
-    },
+        content: "I stumbled upon Swami Aiyya's teachings during a challenging period in my life. The wisdom and guidance received were like a beacon of light, leading me towards inner peace and self-discovery. The transformative power of these teachings is truly remarkable.",
+        name: "Rajesh",
+        place: "New Delhi"
+      }
 ]
 
 const Testimonials = () => {
@@ -98,6 +94,11 @@ const Testimonials = () => {
 
         <h1 className="text-center font-[600] text-[40px] md:text-[68px]"><span className="text-[#FFA63E]">Words </span> of Wisdom</h1>
         <Carousel 
+            plugins={[
+                Autoplay({
+                delay: 5000,
+                }),
+            ]}
             opts={{
                 loop:true
             }}
@@ -109,8 +110,8 @@ const Testimonials = () => {
                 {testimonials.map((testimonial,index)=>{
                     return (
                         <CarouselItem className={`pb-10 basis1/1 md:basis-1/3 lg:basis-1/5 md:pl-[9rem]`} key={index}>
-                            <div className={`relative py-6 px-10 h-[540px] md:h-[480px] md:w-[400px] bg-[#F5F2ED] rounded-md ${current===index?'translate-y-8 transition':''}
-                                ${checkNextOrPrev(index)?'translate-y-4 transition':''}`}>
+                            <div className={`relative py-6 px-10 h-[540px] md:h-[480px] md:w-[400px] bg-[#F5F2ED] rounded-md 
+                               `}>
                                 <Image src={quote} alt="''"></Image>
 
                                 <p className="mt-4 font-[500] text-[21px] leading-[31px]">
@@ -133,8 +134,8 @@ const Testimonials = () => {
                 
                 
             </CarouselContent>
-            <CarouselPrevious onClick={onLeftClick} className="left-[37%] md:left-[47.8%] top-[90%] "/>
-            <CarouselNext  onClick={onRightClick} className="right-[37%] md:right-[47.8%] top-[90%]   "/>
+            {/* <CarouselPrevious onClick={onLeftClick} className="left-[37%] md:left-[47.8%] top-[90%] bg-[#FFA63E]"/>
+            <CarouselNext  onClick={onRightClick} className="right-[37%] md:right-[47.8%] top-[90%] bg-[#FFA63E]  "/> */}
         </Carousel>
     </div>
   )

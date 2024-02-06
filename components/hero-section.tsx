@@ -13,6 +13,7 @@ const HeroSection = () => {
 
   const carouselData = [
     "Remember that you are the pure consciousness, which is immortal.",
+    "Sagala Ashiwaryam petru irai nilai anubhavathudan vazhga",
     "Your pure consciousness is covered with knowledge, past experiences, and emotions. Learn to unlearn these aspects to become free.",
     "Form or matter evolves in space, space is the dark matter where all creations happen, understand that you are also a creator",
     "A powerful being such as you is capable of instilling values of God attributes, Selfless Love, Compassion and Harmony. Find the GOD in YOU",

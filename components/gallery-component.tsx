@@ -52,8 +52,8 @@ const GalleryComponent = ({title,content,images,firstImg,last,videos,attendee}:G
 
         <div className='w-[90%] p-4 md:p-8 border-black border-[1px] relative flex justify-center items-center'>
         <Image src={firstImg} onClick={handleOpenModal} alt='img' className='max-h-[300px] md:max-h-full md:h-[500px] w-auto object-contain'></Image>
-        <ChevronLeftCircle onClick={handleOpenModal} className='absolute h-5 w-5 md:w-8 md:h-8 left-[0.5%] md:left-4 top-1/2 -translate-y-1/2'/>
-        <ChevronRightCircle onClick={handleOpenModal} className='absolute h-5 w-5 md:w-8 md:h-8 right-[0.5%] md:right-4 top-1/2 -translate-y-1/2'/>
+        <ChevronLeftCircle onClick={handleOpenModal} className='absolute h-5 w-5 md:w-8 md:h-8 left-[0.5%] md:left-4 top-1/2 -translate-y-1/2 bg-[#FFA63E] rounded-full text-white'/>
+        <ChevronRightCircle onClick={handleOpenModal} className='absolute h-5 w-5 md:w-8 md:h-8 right-[0.5%] md:right-4 top-1/2 -translate-y-1/2 bg-[#FFA63E] rounded-full text-white'/>
       </div>
     
       {open && <ModalCarousel images={images} setOpen={setOpen} videos={videos}/>}
