@@ -9,7 +9,7 @@ const temples = [
         title2:"Velvi Peedam",
         content:[
             "Devi Pratyangira was perfected by two Rishis, Maharishi Pratyangaras and Maharishi Angiras. The Maha Yogmaya Devi herself declared that she would be known by the name “Pratyangira”. The Rishis, Angras and Prathyangaras, have shared Sri Maha Pratyangira Devi’s powerful mantra: “Om Sam Pakshak Jwala Jigwe Karala Thamstre Prathyangere Sham Hreem Hum pat”",
-            "Pratyangira worship is only done by the guidance of a Guru who is proficient in Tantra and Mantra. Worships dedicated to Pratyangira are performed for the welfare of the people and for eliminating the influences of evil forces. Here at Dharapuram, Sri Pratyangira Devi Velvi Peedam, Pratyangira Homam is performed by her child Swami Sarvanandar on the days of Amavasya and Poornima."
+            "Pratyangira worship is only done by the guidance of a Guru who is proficient in Tantra and Mantra. Worships dedicated to Pratyangira are performed for the welfare of the people and for eliminating the influences of evil forces. Here at Dharapuram, Sri Pratyangira Devi Velvi Peedam, Pratyangira Homam is performed by her child Swami Sarvanandhar on the days of Amavasya and Poornima."
         ],
         img:templeFirst
     },
