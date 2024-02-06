@@ -1,6 +1,7 @@
 import Image, { StaticImageData } from "next/image"
 import templeFirst from "@/assets/about/temple-1.png"
-import templeSecond from "@/assets/about/temple-2.png"
+// import templeSecond from "@/assets/about/temple-2.png"
+import templeSecond from "@/assets/about/goddess-bala.jpg"
 
 const temples = [
     {
