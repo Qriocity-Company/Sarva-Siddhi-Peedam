@@ -166,7 +166,7 @@ const page = () => {
         
 
         <GalleryComponent title={"Sarva Siddhi Sankalpa Dhyanam - Receiving Energy  Delhi, September 2023"} content={"A two day program, 20 people gathered to experience the divine energy and further practised karma cleaning with the Siva Lingam Meditation. Many reported that they slept well, had a magical experience, and experienced weightlessness. Their continued practise has given them phenomenal changes in life. Share testimonials"} images={[sarvaSecond,sarvaFirst,sarvaThird,sarvaFourth,sarvaFifth,]} firstImg={sarvaSecond} last={false}
-        videos={[]} attendee={"20+"}/>
+        videos={["https://www.youtube.com/embed/X873G_CgOVE?si=0vEeMMyBEWQ1bHZJ","https://www.youtube.com/embed/Qm26TA_2ZZs?si=gcPXT4nYZfQjen6S"]} attendee={"20+"}/>
 
         <GalleryComponent title={"Receiving Energy - Bangalore, December 9th and 10th 2023"} content={"Karma Clearing, Aura Healing and Connection with Nature.A two day, participants could get over past baggages and generate new found karma for themselves. They could experience energy without touch and they were mind blow as plants and trees responded to them. Share testimonials."} images={[BangaloreFifth,BangaloreFirst, BangaloreSecond, BangaloreThird, BangaloreFourth,  BangaloreSixth, BangaloreSeventh, BangaloreEighth]} firstImg={BangaloreFifth} last={false}
         videos={[]} attendee={"20+"}/>
