@@ -7,6 +7,7 @@ import location from "@/assets/footer/location.svg"
 
 
 import Link from "next/link"
+import { Globe2 } from "lucide-react"
 const ContactFooter = () => {
   return (
     <div className="w-full flex flex-col items-center font-khand">
@@ -27,7 +28,11 @@ const ContactFooter = () => {
                         <div className="flex gap-6">
                             <Image src={call} alt="phone"></Image>
                             <p>(+91)-98863 67610 / (+91) - 90037 10199</p>
-                        </div>  
+                        </div> 
+                        <div className="flex gap-5 items-center">
+                            <Globe2 className="h-8 w-8 text-[#FFA63E]"></Globe2>
+                            <a href="https://chat.whatsapp.com/EGDK3HYAL5g3REz8e6pANI " target="_blank">Click To join our Community</a>
+                        </div>   
                     </div>
                 </div>
                 <div className="mt-4">
