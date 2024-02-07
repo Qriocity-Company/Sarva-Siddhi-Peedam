@@ -38,13 +38,13 @@ const Footer = () => {
                     <div className="mt-2 md:mt-6 font-[500] leading-[28px] text-[18px] flex flex-col gap-6">
                         <div className="flex items-center gap-16 lg:gap-0  lg:justify-between">
                             <Link href="/about">About Us</Link>
-                            <Link href="/about">Programs</Link>
+                            <Link href="/programs">Programs</Link>
                             <Link href="/gallery">Gallery</Link>
 
                         </div>  
                         <div className="flex items-center  gap-14 lg:gap-12  ">
-                            <Link href="/about">Contact Us</Link>
-                            <Link href="/about">Event Calender</Link>
+                            <Link href="/contact">Contact Us</Link>
+                            <Link href="/calendar">Event Calender</Link>
                         </div>  
                          
                     </div>
