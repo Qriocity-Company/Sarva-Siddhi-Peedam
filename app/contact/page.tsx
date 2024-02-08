@@ -117,12 +117,20 @@ const Page = () => {
                     </div>
                 </div>
             </form>
+            
+            <div className="w-full bg-[#F5F2ED] border-2 border-black shadow-[2px_4px_0px_#000000] px-4 py-6 block md:flex rounded-lg items-center  justify-between mt-12 md:mt-16">
+
+                <p className="text-[24px] md:text-[30px] font-[500]">Join Our Community to get the Latest Updates about Sarva Siddhi Peedam!</p>
+
+                <a href="https://chat.whatsapp.com/EGDK3HYAL5g3REz8e6pANI " target="_blank" className="bg-[#FFA63E] w-fit text-white text-[20px] font-[500] p-3 px-10 rounded-lg flex items-center mt-4 md:mt-0">Join Now</a>
+
+            </div>
 
             {/* map section */}
-            <div className="block md:flex  gap-5 lg:gap-10 my-24 justify-between items-center">
+            <div className="block md:flex  gap-5 lg:gap-10 my-12 md:my-24 justify-between items-center">
                 {/* <Image onClick={openGoogleMap} src={map} alt="location" className="order-2"></Image> */}
                 <iframe className="order-2 rounded-xl" style={{width: '100%'}} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.896708009696!2d77.5574706!3d10.742443699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9bfe3744d4f1d%3A0x607fdcd7f6639d9a!2ssri%20pratyangira%20devi%20velvi%20peedam!5e0!3m2!1sen!2sin!4v1707076635809!5m2!1sen!2sin" width="600" height="450" loading="lazy" ></iframe>
-                <div className="order-1 mt-5 md:mt-0">
+                <div className="order-1  mt-8 md:mt-0">
                     <h1 className="font-[700] text-[30px] leading-[42px] lg:leading-[48px] lg:text-[35px]">Sarva Siddhi Peedam</h1>
                     <div className=" gap-2">
                         <span className=" text-[26px] leading-[30px] lg:text-[32px] lg:leading-[42px] text-[#FFA63E] font-semibold">Location : </span>
